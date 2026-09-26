@@ -47,7 +47,7 @@
     loadWarning =
       "Saved data could not be read. This session is temporary; your previous saved data has not been overwritten.";
   }
-  let route = "today",
+  let route = "practices",
     gameTab = state.gameTab || "arrival",
     rulesTab = "ours",
     editingId = null,
@@ -129,7 +129,6 @@
     const active =
       route === "practice" || route === "drill" ? "practices" : route;
     $("#nav").innerHTML = [
-      ["today", "Today"],
       ["practices", "Practices"],
       ["game", "Game day"],
       ["team", "Team"],
@@ -354,13 +353,15 @@
     });
   }
   function practices() {
+    const p =
+      PRACTICES.find((x) => x.id === state.currentPractice) || PRACTICES[0];
     return (
       heading(
-        "THE SEASON",
-        "Small steps. Big confidence.",
-        "10 core practices + 2 optional sessions. Every plan is 60 minutes.",
+        "READY FOR PRACTICE",
+        "Let’s get them playing.",
+        "Your next session and the full season, together.",
       ) +
-      `<div class="practice-list">${PRACTICES.map((p) => `<button class="card practice-card" data-go="practice/${p.id}"><div class="row"><span class="num">${String(p.id).padStart(2, "0")}</span>${pill(state.completed.includes(p.id) ? "COMPLETE" : p.bonus ? "BONUS" : "60 MIN", state.completed.includes(p.id) ? "green" : "")}</div><h2>${esc(p.title)}</h2><p class="muted">${esc(p.focus)}</p><span class="small" style="color:var(--green)">Open practice →</span></button>`).join("")}</div>`
+      `<div class="grid"><div class="stack"><section class="card feature"><div class="row">${pill("NEXT PRACTICE", "green")}<span class="small muted">${String(p.id).padStart(2, "0")} / 12</span></div><div class="space"><div class="eyebrow">${esc(p.focus)} · 60 MIN</div><h2>${esc(p.title)}</h2><p>${esc(p.objective)}</p></div>${pitch("gates", "Dribbling through cone gates")}<div class="gap space">${btn(state.live ? "Resume practice" : "Start practice", state.live ? "resumeLive" : "startPractice", "primary", `data-id="${p.id}"`)}${go("View plan", `practice/${p.id}`)}</div></section></div><div class="stack"><section class="card"><div class="row"><h2>Ready bag</h2>${btn("Reset", "resetChecks", "link", 'data-key="bag"')}</div>${checkList(["Balls", "Cones", "Pinnies", "Water", "Roster", "First aid"], "bag")}</section><section class="card"><h2>One voice. Simple cues.</h2><div class="eyebrow">WE HAVE THE BALL</div><p>Find space. Go forward. Look for a teammate or the goal.</p><div class="eyebrow space">THEY HAVE THE BALL</div><p>Get between the ball and our goal. Slow them down. Win it back.</p></section><section class="card"><label class="switch"><input type="checkbox" id="hot" ${state.hot ? "checked" : ""}><span><strong>Hot day mode</strong><br><span class="muted small">More water. Shorter play bursts.</span></span></label>${hotNotice()}</section></div></div><div class="space">${heading("THE SEASON", "Small steps. Big confidence.", "10 core practices + 2 optional sessions. Every plan is 60 minutes.")}<div class="practice-list">${PRACTICES.map((plan) => `<button class="card practice-card" data-go="practice/${plan.id}"><div class="row"><span class="num">${String(plan.id).padStart(2, "0")}</span>${pill(state.completed.includes(plan.id) ? "COMPLETE" : plan.bonus ? "BONUS" : "60 MIN", state.completed.includes(plan.id) ? "green" : "")}</div><h2>${esc(plan.title)}</h2><p class="muted">${esc(plan.focus)}</p><span class="small" style="color:var(--green)">Open practice →</span></button>`).join("")}</div></div><p class="footer-note">${state.completed.length} / 12 practices completed · ${state.roster.length} players on this device · ${storageOK ? "Changes save automatically" : "Temporary session"}</p>`
     );
   }
   function practice(id) {
@@ -489,7 +490,7 @@
           state.currentPractice = Math.min(12, l.practice + 1);
           state.live = null;
           save();
-          navigate("today");
+          navigate("practices");
           toast("Practice complete. Great work, coach.");
         },
       );
@@ -731,7 +732,7 @@
         "ALWAYS WITHIN REACH",
         "Safety comes first.",
         "Coaching reminders, not medical diagnosis.",
-        go("Back to today", "today"),
+        go("Back to practices", "practices"),
       ) +
       `<div class="grid"><section class="card"><div class="eyebrow">HEAD INJURY</div><h2>No heading for this age group.</h2><p>If a concussion is suspected, stop participation immediately, notify the parent or guardian, and follow league procedure.</p><div class="notice danger">Keep the player out for the rest of the day and until cleared by a healthcare professional. Never ask them to play through it.</div><p>Emergency signs such as repeated vomiting, seizures, worsening headache, or trouble staying awake need emergency care. Call 911 for an emergency.</p><a href="https://www.cdc.gov/heads-up/response/index.html" target="_blank" rel="noopener">CDC HEADS UP guidance ↗</a></section><section class="card"><div class="eyebrow">HEAT & HYDRATION</div><h2>Check the players, not just the clock.</h2><p>Consider heat, sun, air quality, fatigue, and behavior. Offer extra water and shade; use shorter rounds. Follow league weather policy.</p><p>Stop activity if a child seems unwell. Get urgent help for collapse, confusion, or other emergency signs.</p><label class="switch"><input id="hot" type="checkbox" ${state.hot ? "checked" : ""}><strong>Hot day mode</strong></label><p class="small muted space">This toggle does not decide whether conditions are safe to play.</p><a href="https://www.ussoccer.com/soccer-forward/resource-hub/managing-extreme-weather-conditions" target="_blank" rel="noopener">U.S. Soccer weather resources ↗</a></section><section class="card full"><h2>Field & equipment</h2>${list(["Secure goals; never allow climbing.", "Check holes, debris, and unsafe surfaces.", "Shin guards with socks covering them; appropriate shoes.", "Remove prohibited jewelry and unsafe equipment per league rules.", "Check ball inflation and keep first aid, water, and emergency contacts accessible to the responsible adult."])}</section></div>`
     );
@@ -773,11 +774,10 @@
     location.hash = path;
   }
   function render() {
-    const parts = (location.hash.slice(1) || "today").split("/");
-    route = parts[0];
+    const parts = (location.hash.slice(1) || "practices").split("/");
+    route = parts[0] === "today" ? "practices" : parts[0];
     document.body.classList.toggle("live-mode", route === "live");
     const views = {
-      today,
       practices,
       practice: () => practice(Number(parts[1])),
       drill: () => drillDetail(Number(parts[1]), Number(parts[2])),
@@ -790,7 +790,7 @@
       tools: toolsPage,
       settings,
     };
-    $("#main").innerHTML = (views[route] || today)();
+    $("#main").innerHTML = (views[route] || practices)();
     nav();
     const selectedTab = $('[data-game-tab][aria-selected="true"]');
     if (selectedTab) selectedTab.parentElement.scrollLeft = Math.max(0, selectedTab.offsetLeft - selectedTab.parentElement.offsetLeft - 80);
@@ -1118,7 +1118,7 @@
             storageOK = true;
             save();
             $("#storage-warning").hidden = storageOK;
-            navigate("today");
+            navigate("practices");
             toast("Local data reset.");
           },
         ),
