@@ -2424,6 +2424,19 @@ window.REFERENCE = {
   Positions: "Rotate roles; development comes before the result.",
 };
 
+window.LA_QUINTA_8U = {
+  "Match format": "6 vs. 6",
+  "Game length": "40 minutes — two 20-minute halves",
+  "Team roster": "Approximately 8 players",
+  "Playing time": "Every player must play at least three quarters",
+  "Bench rotation":
+    "No player may sit out two quarters until every player has sat out one quarter",
+  "Injury / early departure":
+    "Have the Assistant Referee record it on the game card",
+  Equipment: "Shin guards required; soccer cleats or sneakers allowed",
+  Practice: "One 60-minute practice each week",
+};
+
 </script>
     <script>
 window.CUES = {
@@ -3201,14 +3214,18 @@ window.SOURCES = [
       ) +
       `<div class="subnav">${btn("Our League", "ours", rulesTab === "ours" ? "primary" : "")}${btn("Reference only", "reference", rulesTab === "reference" ? "primary" : "")}</div>${
         rulesTab === "ours"
-          ? `<section class="card"><h2>${esc(state.rules.name || "Set up your league")}</h2><p class="muted">Only enter rules confirmed by your league. Blank means unconfirmed.</p><dl class="rules-list">${RULE_FIELDS.filter(
+          ? `<div class="stack"><section class="card feature"><div class="row"><div><div class="eyebrow">CONFIRMED LOCAL INFORMATION</div><h2>La Quinta AYSO Region 443 · 8U</h2></div>${pill("LOCAL", "green")}</div><dl class="rules-list">${Object.entries(LA_QUINTA_8U)
+              .map(
+                ([k, v]) => `<div><dt>${esc(k)}</dt><dd>${esc(v)}</dd></div>`,
+              )
+              .join("")}</dl><div class="notice">Still confirm with Region 443: goalkeeper use, touchline restart, goal-kick procedure, restart details, and any mercy rule.</div><p class="small space">Sources: <a href="https://www.ayso443.org/Default.aspx?tabid=855462" target="_blank" rel="noopener">Region 443 program information ↗</a> and <a href="https://www.ayso443.org/Default.aspx?tabid=855459" target="_blank" rel="noopener">Region 443 participation policy ↗</a>. Reviewed September 25, 2026.</p></section><section class="card"><h2>${esc(state.rules.name || "Your confirmed game settings")}</h2><p class="muted">These settings control the game clock, rotations, and practice restart guidance on this device. Blank means unconfirmed.</p><dl class="rules-list">${RULE_FIELDS.filter(
               (f) => f[0] !== "name",
             )
               .map(
                 ([k, t]) =>
                   `<div><dt>${t}</dt><dd>${k === "periods" && state.rules[k] ? (state.rules[k] === "2" ? "Halves" : "Quarters") : rule(k)}</dd></div>`,
               )
-              .join("")}</dl></section>`
+              .join("")}</dl>${go("Update game settings", "league", "space")}</section></div>`
           : `<div class="notice">REFERENCE ONLY • Your local league rules may differ. Our League controls what coaches follow. These values are never copied into your settings automatically.</div><div class="grid"><section class="card"><h2>Common AYSO 8U reference</h2><dl class="rules-list">${Object.entries(
               REFERENCE,
             )

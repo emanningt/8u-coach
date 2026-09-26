@@ -32,3 +32,16 @@ window.REFERENCE = {
   "Touchline restart": "Region determines throw, pass, or dribble-in",
   Positions: "Rotate roles; development comes before the result.",
 };
+
+window.LA_QUINTA_8U = {
+  "Match format": "6 vs. 6",
+  "Game length": "40 minutes — two 20-minute halves",
+  "Team roster": "Approximately 8 players",
+  "Playing time": "Every player must play at least three quarters",
+  "Bench rotation":
+    "No player may sit out two quarters until every player has sat out one quarter",
+  "Injury / early departure":
+    "Have the Assistant Referee record it on the game card",
+  Equipment: "Shin guards required; soccer cleats or sneakers allowed",
+  Practice: "One 60-minute practice each week",
+};
