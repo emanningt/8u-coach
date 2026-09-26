@@ -1,0 +1,3828 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta
+      name="viewport"
+      content="width=device-width,initial-scale=1,viewport-fit=cover"
+    />
+    <meta name="theme-color" content="#101e2a" />
+    <meta name="apple-mobile-web-app-capable" content="yes" />
+    <meta
+      name="apple-mobile-web-app-status-bar-style"
+      content="black-translucent"
+    />
+    <meta
+      name="description"
+      content="Your pocket practice plan and sideline companion for 8U soccer."
+    />
+    <title>8U Coach • The sideline, simplified</title>
+    
+    <link rel="icon" href="data:image/png;base64,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" />
+    <link rel="apple-touch-icon" href="data:image/png;base64,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" />
+    <style>:root {
+  color-scheme: dark;
+  --bg: #0a141d;
+  --panel: #13232f;
+  --panel2: #1b303d;
+  --line: #344c5a;
+  --text: #f4f8fa;
+  --muted: #b4c5ce;
+  --green: #b6f47b;
+  --ink: #112616;
+  --amber: #ffd485;
+  --red: #ffb2ae;
+  font-family:
+    Inter,
+    ui-sans-serif,
+    -apple-system,
+    BlinkMacSystemFont,
+    "Segoe UI",
+    sans-serif;
+  font-size: 16px;
+}
+* {
+  box-sizing: border-box;
+}
+body {
+  margin: 0;
+  background: var(--bg);
+  color: var(--text);
+  line-height: 1.5;
+}
+button,
+input,
+select,
+textarea {
+  font: inherit;
+}
+button,
+a,
+input,
+select,
+textarea {
+  touch-action: manipulation;
+}
+button,
+a {
+  -webkit-tap-highlight-color: transparent;
+}
+button {
+  cursor: pointer;
+  border: 1px solid var(--line);
+  border-radius: 12px;
+  background: var(--panel2);
+  color: var(--text);
+  min-height: 48px;
+  padding: 11px 17px;
+  font-weight: 650;
+}
+button:hover {
+  border-color: var(--green);
+}
+button:disabled {
+  opacity: 0.4;
+  cursor: not-allowed;
+}
+a {
+  color: var(--green);
+}
+button.primary,
+.primary {
+  background: var(--green);
+  color: var(--ink);
+  border-color: var(--green);
+}
+button.danger {
+  color: var(--red);
+}
+button.quiet {
+  background: transparent;
+  border-color: transparent;
+  padding: 10px;
+}
+.wide {
+  width: 100%;
+}
+:focus-visible {
+  outline: 3px solid var(--amber);
+  outline-offset: 4px;
+}
+header {
+  max-width: 1180px;
+  margin: auto;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 10px;
+  padding: 24px 28px;
+  border-bottom: 1px solid var(--line);
+}
+.brand {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  text-decoration: none;
+  color: var(--text);
+  font-weight: 850;
+  letter-spacing: 2px;
+  line-height: 1.1;
+}
+.brand > b {
+  background: var(--green);
+  color: var(--ink);
+  font-size: 25px;
+  letter-spacing: -2px;
+  padding: 11px 10px;
+  border-radius: 12px;
+  transform: rotate(-5deg);
+}
+.brand > b span {
+  font-size: 20px;
+}
+.brand small {
+  font-size: 10px;
+  letter-spacing: 1.2px;
+  display: block;
+  margin-top: 6px;
+  color: var(--muted);
+}
+.header-actions {
+  display: flex;
+  gap: 3px;
+}
+main {
+  max-width: 1120px;
+  margin: 0 auto;
+  padding: 30px 0 130px;
+}
+h1,
+h2,
+h3,
+p {
+  margin-top: 0;
+}
+h1 {
+  font-size: clamp(30px, 5vw, 44px);
+  letter-spacing: -1.5px;
+  line-height: 1.13;
+  margin-bottom: 12px;
+}
+h2 {
+  font-size: 25px;
+  letter-spacing: -0.7px;
+  line-height: 1.2;
+  margin-bottom: 15px;
+}
+h3 {
+  font-size: 18px;
+  margin-bottom: 8px;
+}
+.eyebrow {
+  text-transform: uppercase;
+  letter-spacing: 1.8px;
+  font-size: 12px;
+  font-weight: 800;
+  color: var(--green);
+  margin-bottom: 10px;
+}
+.muted {
+  color: var(--muted);
+}
+.small {
+  font-size: 14px;
+}
+.page-heading {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 20px;
+  margin-bottom: 28px;
+}
+.page-heading p {
+  margin: 0;
+}
+.grid {
+  display: grid;
+  grid-template-columns: 1.4fr 1fr;
+  gap: 20px;
+}
+.equal {
+  grid-template-columns: 1fr 1fr;
+}
+.stack {
+  display: grid;
+  gap: 20px;
+  align-content: start;
+}
+.card {
+  padding: 24px;
+  border: 1px solid var(--line);
+  border-radius: 20px;
+  background: var(--panel);
+  min-width: 0;
+}
+.card p:last-child {
+  margin-bottom: 0;
+}
+.feature {
+  background: linear-gradient(125deg, #1c3f37, #132a32 75%);
+  border-color: #406759;
+  position: relative;
+  overflow: hidden;
+}
+.feature h2 {
+  font-size: clamp(30px, 4vw, 44px);
+  line-height: 1.06;
+  max-width: 450px;
+  letter-spacing: -1px;
+}
+.feature .pitch {
+  max-width: none;
+  margin: 18px 0;
+  max-height: 235px;
+}
+.tag {
+  display: inline-flex;
+  align-items: center;
+  font-size: 12px;
+  letter-spacing: 0.6px;
+  border-radius: 6px;
+  padding: 5px 9px;
+  background: var(--panel2);
+  color: var(--muted);
+  font-weight: 750;
+}
+.tag.green {
+  background: #284333;
+  color: var(--green);
+}
+.tag.amber {
+  background: #42392a;
+  color: var(--amber);
+}
+.row {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 12px;
+}
+.wrap {
+  flex-wrap: wrap;
+}
+.gap {
+  display: flex;
+  gap: 10px;
+  flex-wrap: wrap;
+}
+.space {
+  margin-top: 20px;
+}
+.section-label {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 30px 0 12px;
+}
+.section-label h2 {
+  margin: 0;
+  font-size: 21px;
+}
+.stat {
+  font-variant-numeric: tabular-nums;
+  font-size: 32px;
+  font-weight: 800;
+}
+.checks {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 8px;
+}
+.check {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  min-height: 46px;
+  padding: 8px 10px;
+  background: #0c1b25;
+  border-radius: 10px;
+}
+.check input {
+  width: 22px;
+  height: 22px;
+  accent-color: var(--green);
+  flex-shrink: 0;
+}
+.check:has(input:checked) {
+  color: var(--muted);
+}
+.switch {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+.switch input {
+  width: 24px;
+  height: 24px;
+  accent-color: var(--green);
+}
+.notice {
+  padding: 14px 18px;
+  border-left: 3px solid var(--amber);
+  background: #302b22;
+  border-radius: 8px;
+  color: #ffe5b7;
+  font-size: 14px;
+  margin: 16px 0;
+}
+.notice.green {
+  border-color: var(--green);
+  background: #1c3529;
+  color: #d3f9b5;
+}
+.notice.danger {
+  border-color: var(--red);
+  background: #3b2527;
+  color: #ffdad7;
+}
+.practice-list {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 16px;
+}
+.practice-card {
+  display: flex;
+  flex-direction: column;
+  min-height: 230px;
+  text-align: left;
+}
+.practice-card p {
+  flex: 1;
+}
+.practice-card .num {
+  font-size: 34px;
+  font-weight: 800;
+  color: var(--green);
+  letter-spacing: -1px;
+}
+.practice-card h2 {
+  font-size: 22px;
+  margin: 14px 0 8px;
+}
+.timeline {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+.timeline > li {
+  border-bottom: 1px solid var(--line);
+  padding: 16px 0;
+}
+.timeline > li:last-child {
+  border-bottom: 0;
+}
+.timeline button {
+  text-align: left;
+  width: 100%;
+  display: flex;
+  gap: 15px;
+  align-items: center;
+  background: transparent;
+  border: 0;
+  padding: 6px;
+}
+.timeline .minute {
+  width: 64px;
+  flex-shrink: 0;
+  color: var(--green);
+  font-size: 14px;
+  font-variant-numeric: tabular-nums;
+}
+.timeline strong {
+  display: block;
+}
+.timeline small {
+  color: var(--muted);
+  font-size: 14px;
+}
+.pitch {
+  width: 100%;
+  display: block;
+  background: #163e31;
+  border: 1px solid #527361;
+  border-radius: 14px;
+  max-height: 285px;
+}
+.legend {
+  font-size: 12px;
+  color: var(--muted);
+  margin: 8px 0 15px;
+}
+.details-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 20px;
+}
+.details-grid ol,
+.details-grid ul {
+  padding-left: 23px;
+}
+li {
+  margin-bottom: 6px;
+}
+.cue {
+  font-size: 23px;
+  line-height: 1.3;
+  font-weight: 700;
+  border-left: 3px solid var(--green);
+  padding-left: 17px;
+  margin: 20px 0;
+}
+.role {
+  border: 1px solid #6a9651;
+  background: #1d342b;
+  padding: 16px;
+  border-radius: 12px;
+}
+.role h3 {
+  color: var(--green);
+}
+.role.emphasized {
+  border-width: 2px;
+}
+.accordion {
+  border-top: 1px solid var(--line);
+  padding: 16px 0;
+}
+.accordion summary {
+  cursor: pointer;
+  font-weight: 700;
+  min-height: 40px;
+}
+.accordion p {
+  margin-top: 10px;
+}
+.live {
+  max-width: 860px;
+  margin: auto;
+}
+.live-title {
+  font-size: 34px;
+}
+.timer {
+  font-size: clamp(64px, 14vw, 112px);
+  font-weight: 850;
+  letter-spacing: -4px;
+  font-variant-numeric: tabular-nums;
+  line-height: 1.12;
+}
+.timer-box {
+  text-align: center;
+  padding: 24px 0;
+}
+.timer-box p {
+  margin: 10px 0;
+}
+.controls {
+  display: grid;
+  grid-template-columns: 1fr 1.4fr 1fr;
+  gap: 10px;
+}
+.progress {
+  display: flex;
+  gap: 6px;
+  margin: 20px 0;
+}
+.progress span {
+  height: 6px;
+  background: var(--line);
+  flex: 1;
+  border-radius: 6px;
+}
+.progress .done {
+  background: #58913e;
+}
+.progress .current {
+  background: var(--green);
+}
+.subnav {
+  display: flex;
+  gap: 8px;
+  overflow-x: auto;
+  padding-bottom: 12px;
+  margin-bottom: 14px;
+}
+.subnav button {
+  white-space: nowrap;
+  flex-shrink: 0;
+}
+.subnav button.active {
+  background: var(--green);
+  color: var(--ink);
+}
+.player {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  padding: 14px 0;
+  border-bottom: 1px solid var(--line);
+}
+.player:last-child {
+  border-bottom: 0;
+}
+.jersey {
+  height: 42px;
+  min-width: 42px;
+  padding: 9px 5px;
+  border-radius: 10px;
+  background: #263f4e;
+  text-align: center;
+  font-weight: 750;
+  color: var(--green);
+}
+.player-info {
+  flex: 1;
+  min-width: 0;
+  overflow-wrap: anywhere;
+}
+.player-info strong {
+  display: block;
+}
+.player-info small {
+  display: block;
+  font-size: 12px;
+  color: var(--muted);
+}
+.player .time {
+  font-size: 20px;
+  font-variant-numeric: tabular-nums;
+  font-weight: 750;
+}
+.player-actions {
+  display: flex;
+  gap: 6px;
+  flex-wrap: wrap;
+}
+.player select {
+  max-width: 115px;
+  padding: 8px;
+  font-size: 14px;
+}
+.rules-list {
+  margin: 0;
+}
+.rules-list div {
+  display: grid;
+  grid-template-columns: 1fr 1.2fr;
+  gap: 16px;
+  padding: 14px 0;
+  border-bottom: 1px solid var(--line);
+}
+.rules-list dt {
+  color: var(--muted);
+}
+.rules-list dd {
+  margin: 0;
+  overflow-wrap: anywhere;
+}
+.unconfirmed {
+  color: var(--amber);
+  font-size: 12px;
+  font-weight: 750;
+  letter-spacing: 0.5px;
+}
+.form-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 16px;
+}
+label.field {
+  display: block;
+  font-size: 14px;
+  color: var(--muted);
+}
+label.field input,
+label.field select,
+label.field textarea {
+  display: block;
+  margin-top: 7px;
+  width: 100%;
+}
+input:not([type="checkbox"]),
+select,
+textarea {
+  background: #0b1a24;
+  color: var(--text);
+  border: 1px solid #56707e;
+  border-radius: 10px;
+  padding: 12px;
+  min-height: 48px;
+  max-width: 100%;
+}
+textarea {
+  min-height: 100px;
+  resize: vertical;
+}
+.full {
+  grid-column: 1/-1;
+}
+.empty {
+  text-align: center;
+  padding: 32px 20px;
+  color: var(--muted);
+}
+.empty h2 {
+  color: var(--text);
+}
+.footer-note {
+  font-size: 12px;
+  color: var(--muted);
+  margin-top: 24px;
+}
+.water {
+  background: #193944;
+  border-color: #86cee5;
+}
+.water .timer {
+  color: #a5e3f8;
+}
+.score-bar {
+  height: 8px;
+  background: #233e4d;
+  border-radius: 8px;
+  margin-top: 5px;
+  overflow: hidden;
+}
+.score-bar > span {
+  display: block;
+  height: 100%;
+  background: var(--green);
+}
+nav#nav {
+  position: fixed;
+  z-index: 5;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background: rgba(14, 29, 40, 0.98);
+  border-top: 1px solid #49606e;
+  padding: 8px max(14px, env(safe-area-inset-right))
+    max(9px, env(safe-area-inset-bottom));
+  display: flex;
+  justify-content: center;
+  gap: 12px;
+}
+nav button {
+  flex: 1;
+  max-width: 170px;
+  min-height: 62px;
+  background: transparent;
+  border: 0;
+  border-radius: 12px;
+  color: var(--muted);
+  font-size: 12px;
+  letter-spacing: 0.5px;
+  padding: 8px 5px;
+}
+nav button.active {
+  background: #273e32;
+  color: var(--green);
+}
+nav svg {
+  display: block;
+  margin: 0 auto 4px;
+  width: 22px;
+  height: 22px;
+}
+body.live-mode header,
+body.live-mode nav#nav {
+  display: none;
+}
+body.live-mode main {
+  padding-top: max(20px, env(safe-area-inset-top));
+  padding-bottom: max(24px, env(safe-area-inset-bottom));
+}
+#toast {
+  position: fixed;
+  z-index: 20;
+  left: 50%;
+  bottom: 100px;
+  transform: translateX(-50%);
+  max-width: 90vw;
+  padding: 12px 20px;
+  border-radius: 12px;
+  background: var(--green);
+  color: var(--ink);
+  box-shadow: 0 5px 30px #0008;
+  display: none;
+}
+dialog {
+  color: var(--text);
+  background: var(--panel);
+  border: 1px solid var(--line);
+  border-radius: 20px;
+  padding: 24px;
+  width: min(620px, calc(100% - 24px));
+  max-height: 90dvh;
+}
+dialog::backdrop {
+  background: #000b;
+}
+dialog h2 {
+  padding-right: 36px;
+}
+.dialog-close {
+  float: right;
+}
+.skip {
+  position: absolute;
+  top: -80px;
+}
+.skip:focus {
+  top: 0;
+  background: var(--bg);
+  padding: 20px;
+  z-index: 30;
+}
+#storage-warning {
+  background: #512b26;
+  padding: 12px;
+  text-align: center;
+}
+button.link {
+  border: 0;
+  background: transparent;
+  color: var(--green);
+  padding: 0 6px;
+}
+.screen-only {
+  display: block;
+}
+.on-field-label {
+  color: var(--green);
+}
+.summary-line {
+  font-size: 14px;
+  color: var(--muted);
+  margin: 5px 0 16px;
+}
+.live .card {
+  padding: 20px;
+}
+@media (min-width: 800px) {
+  .live .live-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 20px;
+  }
+}
+@media (max-width: 1180px) {
+  main {
+    padding: 28px 24px 130px;
+  }
+}
+@media (max-width: 760px) {
+  header {
+    padding: 17px 18px;
+  }
+  .brand small {
+    display: none;
+  }
+  .brand {
+    font-size: 14px;
+    gap: 9px;
+  }
+  .brand > b {
+    font-size: 23px;
+  }
+  .header-actions .quiet {
+    font-size: 12px;
+    padding: 10px 6px;
+  }
+  main {
+    padding: 25px 16px 115px;
+  }
+  .grid,
+  .equal,
+  .details-grid {
+    grid-template-columns: 1fr;
+  }
+  .card {
+    padding: 20px;
+    border-radius: 16px;
+  }
+  .practice-list {
+    grid-template-columns: 1fr 1fr;
+    gap: 12px;
+  }
+  .practice-card {
+    padding: 16px;
+    min-height: 225px;
+  }
+  .practice-card h2 {
+    font-size: 19px;
+  }
+  .practice-card p {
+    font-size: 14px;
+  }
+  .feature .pitch {
+    float: none;
+    margin: 18px 0;
+    max-width: none;
+    max-height: 190px;
+  }
+  .page-heading {
+    align-items: flex-start;
+    margin-bottom: 22px;
+    gap: 10px;
+  }
+  .page-heading h1 {
+    font-size: 32px;
+  }
+  .page-heading .tag {
+    font-size: 10px;
+  }
+  .form-grid {
+    grid-template-columns: 1fr;
+  }
+  .checks {
+    gap: 6px;
+  }
+  .live-title {
+    font-size: 30px;
+  }
+  .player-actions button {
+    padding: 9px;
+  }
+  .player {
+    flex-wrap: wrap;
+  }
+  .controls button {
+    padding: 12px 8px;
+  }
+  nav#nav {
+    gap: 2px;
+  }
+  nav button {
+    font-size: 12px;
+    letter-spacing: 0;
+  }
+  .rules-list div {
+    grid-template-columns: 1fr 1.2fr;
+    font-size: 14px;
+  }
+  .timer {
+    letter-spacing: -3px;
+  }
+}
+@media (prefers-reduced-motion: no-preference) {
+  button {
+    transition:
+      background 0.12s,
+      border-color 0.12s;
+  }
+}
+@media print {
+  header,
+  nav,
+  .screen-only,
+  button,
+  #toast {
+    display: none !important;
+  }
+  body {
+    background: white;
+    color: black;
+  }
+  main {
+    padding: 0;
+  }
+  .card {
+    background: white;
+    color: black;
+    border: 1px solid #999;
+    break-inside: avoid;
+  }
+  .muted,
+  .eyebrow,
+  .cue {
+    color: black;
+  }
+  .pitch {
+    max-height: 180px;
+  }
+}
+main:focus {
+  outline: none;
+}
+@media (max-width: 760px) {
+  .player {
+    display: grid;
+    grid-template-columns: 42px minmax(0, 1fr) auto;
+    gap: 10px 12px;
+  }
+  .player > .jersey {
+    grid-column: 1;
+    grid-row: 1;
+  }
+  .player > .player-info {
+    grid-column: 2;
+    grid-row: 1;
+  }
+  .player > .time {
+    grid-column: 3;
+    grid-row: 1;
+  }
+  .player > .player-actions {
+    grid-column: 2/-1;
+    justify-content: flex-end;
+  }
+  .player-info small {
+    font-size: 13px;
+  }
+  .player-info strong {
+    word-break: normal;
+  }
+  .player-actions select {
+    flex: 1;
+    max-width: 160px;
+  }
+}
+</style>
+  </head>
+  <body>
+    <a class="skip" href="#main">Skip to coaching</a>
+    <header>
+      <a href="#today" class="brand" aria-label="8U Coach home"
+        ><b>8<span>U</span></b
+        ><span>COACH<small>YOUR SIDELINE COMPANION</small></span></a
+      >
+      <div class="header-actions">
+        <button data-go="safety" class="quiet">Safety</button
+        ><button data-go="tools" class="quiet">Tools</button
+        ><button data-go="settings" class="quiet">Settings</button>
+      </div>
+    </header>
+    <div id="storage-warning" role="alert" hidden></div>
+    <main id="main" tabindex="-1"></main>
+    <nav id="nav" aria-label="Main navigation"></nav>
+    <div id="toast" role="status" aria-live="polite"></div>
+    <dialog id="dialog"></dialog>
+    <script>window.SINGLE_FILE=true;</script><script>
+window.DRILLS = {
+  arrival: {
+    id: "arrival",
+    name: "Arrival Ball Play",
+    kind: "gates",
+    grid: "20 × 20 yd",
+    players: "Any number; one ball each",
+    objective: "Get moving and explore touches with both feet.",
+    equipment: "Cones; one ball per player; two colors of pinnies",
+    setup: "Mark a square with four cones. Spread players and balls inside.",
+    play: [
+      "Give every arriving player a ball immediately.",
+      "Dribble anywhere; stop the ball with the sole when asked.",
+      "Try inside and outside touches with each foot.",
+    ],
+    cues: ["Little touches.", "Can you stop it anytime?"],
+    success: "Players move continuously and keep the ball within reach.",
+    mistakes:
+      "Big kicks or watching only the ball. Demonstrate three small touches.",
+    assistant:
+      "Greet arrivals, check equipment, and lay out six gates for the next game.",
+    easier: "Walk with the ball.",
+    harder: "Look up and name a color while dribbling.",
+    low: "Coach joins two or three children.",
+    high: "Use two neighboring squares; one coach per square.",
+  },
+  traffic: {
+    id: "traffic",
+    name: "Traffic Jam",
+    kind: "gates",
+    grid: "20 × 20 yd",
+    players: "4–12; one ball each",
+    objective: "Change direction without bumping into another player.",
+    equipment: "Cones; one ball per player; two colors of pinnies",
+    setup: "Spread players around the square; leave plenty of space.",
+    play: [
+      "Everyone dribbles through the square.",
+      "At a crowded area, turn toward open grass.",
+      "On “garage,” stop with a foot on the ball. Restart quickly.",
+    ],
+    cues: ["Find an empty road.", "Head up."],
+    success: "Players turn before colliding.",
+    mistakes: "Running without looking; make the area bigger.",
+    assistant:
+      "Watch spacing and give a quiet reminder to players looking down.",
+    easier: "Walk and turn.",
+    harder: "Add a change of speed after every turn.",
+    low: "Use a smaller square with the coach moving inside.",
+    high: "Split into two squares; avoid crowding.",
+  },
+  redlight: {
+    id: "redlight",
+    name: "Red Light / Green Light",
+    kind: "cross",
+    grid: "20 × 15 yd",
+    players: "4–12; one ball each",
+    objective: "Start, stop, and control speed with the ball.",
+    equipment: "Cones; one ball per player; two colors of pinnies",
+    setup:
+      "Players spread across one end line. Coach stands beyond the opposite line.",
+    play: [
+      "Green: dribble toward the coach.",
+      "Yellow: tiny slow touches. Red: stop the ball under a foot.",
+      "Restart everyone together; nobody is eliminated.",
+    ],
+    cues: ["Small touches to stop.", "Try your other foot."],
+    success: "Ball stays close on each stop.",
+    mistakes:
+      "Racing with huge touches; reward control rather than first place.",
+    assistant:
+      "Stand beside the grid and help players stop; prepare the gates.",
+    easier: "Walk on green.",
+    harder: "Turn and change direction on a blue signal.",
+    low: "Coach plays with the group.",
+    high: "Run two groups side by side, not in a queue.",
+  },
+  gates: {
+    id: "gates",
+    name: "Dribble Through the Gates",
+    kind: "gates",
+    grid: "20 × 20 yd",
+    players: "4–12; one ball each",
+    objective: "Control the ball while finding a new target.",
+    equipment: "Cones; one ball per player; two colors of pinnies",
+    setup: "Scatter six two-yard cone gates with space between them.",
+    play: [
+      "Dribble through a gate, then find a different one.",
+      "Count personal gates in a 45-second round.",
+      "Try again with the other foot; celebrate improvement.",
+    ],
+    cues: ["Look for an open gate.", "Keep it close."],
+    success: "Players avoid crowds and use both feet.",
+    mistakes: "Repeating one gate or kicking far ahead; ask for a new gate.",
+    assistant: "Count touches for a few players and reset knocked cones.",
+    easier: "Make gates wider.",
+    harder: "Use narrower gates and turn after each one.",
+    low: "Use three gates.",
+    high: "Duplicate the grid and divide evenly.",
+  },
+  turns: {
+    id: "turns",
+    name: "Gates with Turns",
+    kind: "gates",
+    grid: "20 × 20 yd",
+    players: "4–12; one ball each",
+    objective: "Turn away from pressure and accelerate into space.",
+    equipment: "Cones; one ball per player; two colors of pinnies",
+    setup:
+      "Place six gates. Briefly demonstrate an inside turn, outside turn, and pullback.",
+    play: [
+      "Dribble through a gate and turn back through it.",
+      "Move toward a different gate after the turn.",
+      "Try each kind of turn in short rounds.",
+    ],
+    cues: ["Turn, then go.", "Find open grass."],
+    success: "Players keep the ball within a step during turns.",
+    mistakes: "Stopping too long after a turn; encourage two quick steps away.",
+    assistant: "Show pullbacks individually and keep the next grid clear.",
+    easier: "Use only the inside turn.",
+    harder: "Coach walks as gentle pressure; choose a turn to escape.",
+    low: "Three gates and coach as gentle pressure.",
+    high: "Two mirrored grids.",
+  },
+  sharks: {
+    id: "sharks",
+    name: "Sharks & Minnows",
+    kind: "cross",
+    grid: "25 × 20 yd",
+    players: "4–10 per grid",
+    objective: "Change speed and direction to escape a defender.",
+    equipment: "Cones; one ball per player; two colors of pinnies",
+    setup:
+      "Mark safe end lines. One defender in the middle; everyone else has a ball at an end.",
+    play: [
+      "Dribblers cross to the opposite safe line.",
+      "Defender tries to knock a ball outside without pushing.",
+      "Retrieve a lost ball immediately and rejoin. Change defender every minute.",
+    ],
+    cues: ["Find the open grass.", "Go when you see space."],
+    success: "Players change direction and nobody sits out.",
+    mistakes: "Defender kicks wildly; remind them to win only the ball.",
+    assistant: "Return stray balls, watch contact, and rotate defenders.",
+    easier: "Defender walks.",
+    harder: "Add a second defender if players are succeeding.",
+    low: "Coach is a gentle shark.",
+    high: "Split into two grids; no waiting lines.",
+  },
+  escape: {
+    id: "escape",
+    name: "1v1 Escape Game",
+    kind: "endzone",
+    grid: "12 × 15 yd per pair",
+    players: "2 per grid",
+    objective: "Protect the ball and escape through an open end.",
+    equipment: "Cones; one ball per player; two colors of pinnies",
+    setup: "Put a two-yard end zone at each end. Partners start in the middle.",
+    play: [
+      "Attacker dribbles into either end zone under control.",
+      "Defender wins the ball and becomes attacker.",
+      "Play 45-second rounds, then switch starting roles.",
+    ],
+    cues: ["Turn away.", "Change speed."],
+    success: "Attacker sees the free end and accelerates.",
+    mistakes: "Charging into defender; point out the other end.",
+    assistant: "Run adjacent grids and rotate partners.",
+    easier: "Defender starts two steps behind.",
+    harder: "Narrow the grid.",
+    low: "Coach defends gently against one player.",
+    high: "Parallel grids with pairs; no long queues.",
+  },
+  shield: {
+    id: "shield",
+    name: "Ball Shield",
+    kind: "duel",
+    grid: "8 × 8 yd per pair",
+    players: "Pairs",
+    objective: "Keep the body between the opponent and ball safely.",
+    equipment:
+      "Cones; one ball per player; two colors of pinnies; two small, secured goals (or cone gates)",
+    setup:
+      "Pairs in separate squares. One ball each pair; defender starts an arm’s length away.",
+    play: [
+      "Attacker shields for 10 seconds using feet and body position.",
+      "Defender tries to touch the ball with a foot.",
+      "Swap roles every round. Keep arms down; no pushing or holding.",
+    ],
+    cues: ["Side on.", "Keep the ball on the far foot."],
+    success: "Attacker protects without using arms to block.",
+    mistakes: "Leaning or pushing; stop and show safe spacing.",
+    assistant: "Watch contact and teach one pair at a time.",
+    easier: "Defender shadows without tackling.",
+    harder: "Attacker must turn out and dribble away.",
+    low: "One pair with coach demonstrating.",
+    high: "Several squares with clear gaps between.",
+  },
+  knockout: {
+    id: "knockout",
+    name: "Keep Your Ball / Knockout",
+    kind: "gates",
+    grid: "20 × 20 yd",
+    players: "4–10; one ball each",
+    objective: "Protect a ball while noticing others.",
+    equipment: "Cones; one ball per player; two colors of pinnies",
+    setup: "Everyone starts inside with a ball. Mark a small return gate.",
+    play: [
+      "Dribble and protect your ball.",
+      "If close, gently poke another ball out while keeping your own.",
+      "If your ball exits, retrieve it and dribble through the return gate immediately. No elimination.",
+    ],
+    cues: ["Protect yours first.", "Eyes up."],
+    success: "Players shield and quickly rejoin.",
+    mistakes: "Leaving own ball or hard kicking; slow down and reset.",
+    assistant: "Help retrieve balls and keep the return path safe.",
+    easier: "Coach is the only ball challenger.",
+    harder: "Reduce grid slightly while keeping safe space.",
+    low: "Play with coach as challenger.",
+    high: "Use two grids of five or six.",
+  },
+  endzone: {
+    id: "endzone",
+    name: "1v1 to End Zones",
+    kind: "endzone",
+    grid: "15 × 12 yd per pair",
+    players: "2 per grid",
+    objective: "Beat a defender with a controlled dribble.",
+    equipment: "Cones; one ball per player; two colors of pinnies",
+    setup:
+      "Mark a two-yard scoring zone at each end. Partners face each other.",
+    play: [
+      "Attack the opposite end zone.",
+      "Score by stopping the ball in it.",
+      "If defender wins the ball, attack the other end. Restart after every score.",
+    ],
+    cues: ["Take them on.", "Push and go."],
+    success: "Players try a move and keep control across the line.",
+    mistakes: "Kicking out of reach; score only with control.",
+    assistant: "Keep spare balls ready and switch partners after two rounds.",
+    easier: "Widen the end zone.",
+    harder: "Narrow the scoring zone.",
+    low: "One grid, coach joins if odd.",
+    high: "Multiple pair grids; equal turns.",
+  },
+  twogoal: {
+    id: "twogoal",
+    name: "1v1 to Two Goals",
+    kind: "wide",
+    grid: "15 × 12 yd",
+    players: "2 per grid",
+    objective: "Choose an open route past a defender.",
+    equipment:
+      "Cones; one ball per player; two colors of pinnies; two small, secured goals (or cone gates)",
+    setup:
+      "Place two small cone goals at the far end. Attacker and defender start at opposite ends.",
+    play: [
+      "Attacker chooses either goal.",
+      "Defender closes one route; attacker can switch.",
+      "After a score or ball out, switch roles immediately.",
+    ],
+    cues: ["Which goal is open?", "Change direction."],
+    success: "Attacker notices and attacks the free goal.",
+    mistakes: "Always using the same side; ask what they see.",
+    assistant: "Feed spare balls and run the adjacent grid.",
+    easier: "Defender starts farther away.",
+    harder: "Bring the goals closer together.",
+    low: "Coach defends softly.",
+    high: "Create multiple grids with pairs.",
+  },
+  goal: {
+    id: "goal",
+    name: "1v1 to Goal",
+    kind: "duel",
+    grid: "18 × 12 yd",
+    players: "2 per grid",
+    objective: "Get past an opponent and shoot accurately.",
+    equipment:
+      "Cones; one ball per player; two colors of pinnies; two small, secured goals (or cone gates)",
+    setup: "A secured small goal at each end; one attacker, one defender.",
+    play: [
+      "Coach rolls a ball to attacker.",
+      "Play toward the far goal; on a turnover, attack the other goal.",
+      "Switch starting roles every 45–60 seconds.",
+    ],
+    cues: ["See the target.", "Be brave."],
+    success: "Both players try attacking and defending.",
+    mistakes: "Long waiting lines; create more grids.",
+    assistant: "Feed balls and keep both players involved.",
+    easier: "Defender starts to the side.",
+    harder: "Start with defender closer.",
+    low: "Coach is defender if needed.",
+    high: "Several grids with spare balls at each.",
+  },
+  partners: {
+    id: "partners",
+    name: "Partner Passing",
+    kind: "passing",
+    grid: "12 × 12 yd",
+    players: "Pairs, 4–6 yd apart",
+    objective: "Pass accurately with the inside of the foot.",
+    equipment: "Cones; one ball per player; two colors of pinnies",
+    setup:
+      "Pairs face each other with one ball. Put cones at each receiving spot.",
+    play: [
+      "Plant foot beside ball and pass gently to partner.",
+      "Receive with a soft touch, then pass back.",
+      "Try both feet; widen distance only when successful.",
+    ],
+    cues: ["Point your plant foot.", "Soft first touch."],
+    success: "Passes arrive on the ground within a step of partner.",
+    mistakes: "Stiff first touch or toe pokes; model a soft inside-foot touch.",
+    assistant: "Help individual pairs and lay out passing gates.",
+    easier: "Stand closer.",
+    harder: "Receive to one side before passing.",
+    low: "Coach pairs with an odd player.",
+    high: "Spread pairs with safe passing lanes.",
+  },
+  passgates: {
+    id: "passgates",
+    name: "Passing Through Gates",
+    kind: "passing",
+    grid: "20 × 20 yd",
+    players: "Pairs; one ball per pair",
+    objective: "Pass accurately to a moving teammate.",
+    equipment: "Cones; one ball per player; two colors of pinnies",
+    setup:
+      "Scatter six two-yard gates. Partners start on opposite sides of a gate.",
+    play: [
+      "Pass through the gate to partner.",
+      "Both move to another empty gate with their ball.",
+      "Count successful passes, then try to improve.",
+    ],
+    cues: ["Look before the pass.", "Meet the ball."],
+    success: "Both partners move after a successful pass.",
+    mistakes: "Crowding the same gate; find a free gate.",
+    assistant: "Reset cones and support pairs who need shorter passes.",
+    easier: "Widen gates and shorten distance.",
+    harder: "Receive into space before moving to next gate.",
+    low: "Three gates for two pairs.",
+    high: "Two areas; keep gates uncrowded.",
+  },
+  passmove: {
+    id: "passmove",
+    name: "Pass and Move",
+    kind: "passing",
+    grid: "15 × 15 yd",
+    players: "Groups of 3",
+    objective: "Move to give the ball carrier an option.",
+    equipment: "Cones; one ball per player; two colors of pinnies",
+    setup:
+      "Three players form a triangle with one ball; use corner cones as starting spots.",
+    play: [
+      "Pass to either teammate.",
+      "After passing, move a few steps to a new open spot.",
+      "Receiver looks up and picks the next pass.",
+    ],
+    cues: ["Pass, then help.", "Show an open lane."],
+    success: "Players make new passing angles.",
+    mistakes: "Standing behind another player; move until ball is visible.",
+    assistant: "Demonstrate an open passing lane and organize trios.",
+    easier: "Stay near the starting triangle.",
+    harder: "Add a walking defender.",
+    low: "Two players pass and move between gates.",
+    high: "Multiple trios; one ball in each group.",
+  },
+  "2v1": {
+    id: "2v1",
+    name: "2v1: Find a Friend",
+    kind: "wide",
+    grid: "20 × 15 yd",
+    players: "3 per grid",
+    objective: "Choose between dribbling and passing.",
+    equipment:
+      "Cones; one ball per player; two colors of pinnies; two small, secured goals (or cone gates)",
+    setup:
+      "Two attackers start together; one defender protects two far-end goals.",
+    play: [
+      "Attackers try to score in either goal.",
+      "Ball carrier dribbles into space or passes if defender closes.",
+      "Rotate the defender every minute; restart quickly.",
+    ],
+    cues: ["What do you see?", "Can you help?"],
+    success: "Ball carrier makes a choice and partner offers width.",
+    mistakes: "Forcing passes; let players dribble if space is open.",
+    assistant: "Rotate defender fairly and feed spare balls.",
+    easier: "Defender walks.",
+    harder: "Bring defender closer to start.",
+    low: "Coach is supporting attacker.",
+    high: "Parallel groups of three; rotate equally.",
+  },
+  shootgates: {
+    id: "shootgates",
+    name: "Shooting Gates",
+    kind: "shoot",
+    grid: "15 × 15 yd",
+    players: "Pairs",
+    objective: "Aim a moving ball at a target.",
+    equipment:
+      "Cones; one ball per player; two colors of pinnies; two small, secured goals (or cone gates)",
+    setup:
+      "Each pair has a three-yard gate and a ball, about five yards from target.",
+    play: [
+      "One player gently rolls ball to partner.",
+      "Partner takes a touch and shoots through gate.",
+      "Collect safely and switch after every shot.",
+    ],
+    cues: ["Look at the target.", "Accuracy first."],
+    success: "Shots travel through gate under control.",
+    mistakes: "Power over accuracy; move closer.",
+    assistant: "Keep shooting lanes apart; retrieve spare balls.",
+    easier: "Stop ball before shooting.",
+    harder: "Narrow the gate.",
+    low: "Coach rolls the ball.",
+    high: "Several gates and clear collection lanes.",
+  },
+  cone: {
+    id: "cone",
+    name: "Hit the Cone",
+    kind: "shoot",
+    grid: "12 × 15 yd",
+    players: "Pairs",
+    objective: "Develop accurate short-distance finishing.",
+    equipment:
+      "Cones; one ball per player; two colors of pinnies; two small, secured goals (or cone gates)",
+    setup:
+      "Each pair has a target cone and starts four yards away. Leave gaps between lanes.",
+    play: [
+      "Pass or shoot at the cone.",
+      "Partner retrieves after ball stops.",
+      "Swap roles each attempt and count personal hits.",
+    ],
+    cues: ["Plant foot beside it.", "Aim low."],
+    success: "More balls reach the chosen target.",
+    mistakes: "Shooting before lane is clear; wait for partner’s signal.",
+    assistant: "Reset targets and ensure safe collection.",
+    easier: "Use a wider target of two cones.",
+    harder: "Move one yard farther back.",
+    low: "Coach retrieves for one player.",
+    high: "Add target lanes so no more than two per lane.",
+  },
+  dribbleshoot: {
+    id: "dribbleshoot",
+    name: "Dribble and Shoot",
+    kind: "shoot",
+    grid: "20 × 15 yd",
+    players: "Pairs per goal",
+    objective: "Finish accurately while moving.",
+    equipment:
+      "Cones; one ball per player; two colors of pinnies; two small, secured goals (or cone gates)",
+    setup:
+      "Set two starting cones eight yards from each secured goal with separate lanes.",
+    play: [
+      "Dribble toward goal and shoot from close range.",
+      "Collect your ball from the side.",
+      "Partner starts when lane is clear. Change feet and starting side.",
+    ],
+    cues: ["See the goal.", "Touch, then shoot."],
+    success: "Players shoot without a long pause.",
+    mistakes: "Dribbling too close to goal; show an optional shooting line.",
+    assistant: "Keep balls moving and manage collection paths.",
+    easier: "Slow dribble and wide target.",
+    harder: "Add a passive defender beside the lane.",
+    low: "One goal with coach retrieving.",
+    high: "More cone goals; two players maximum per lane.",
+  },
+  mirror: {
+    id: "mirror",
+    name: "Mirror Movement",
+    kind: "duel",
+    grid: "8 × 8 yd",
+    players: "Pairs",
+    objective: "Slow down and stay balanced when defending.",
+    equipment:
+      "Cones; one ball per player; two colors of pinnies; two small, secured goals (or cone gates)",
+    setup: "Pairs face each other two yards apart; begin without a ball.",
+    play: [
+      "Leader moves side to side.",
+      "Partner mirrors with small balanced steps.",
+      "Switch after 20 seconds; add a ball to the leader when ready.",
+    ],
+    cues: ["Small steps.", "Stay balanced."],
+    success: "Defender stays in front without crossing feet wildly.",
+    mistakes: "Rushing too close; keep a safe gap.",
+    assistant: "Demonstrate body position and time role changes.",
+    easier: "Walk only.",
+    harder: "Leader dribbles and tries to cross an end line.",
+    low: "Coach is leader.",
+    high: "Parallel pair squares.",
+  },
+  treasure: {
+    id: "treasure",
+    name: "Protect the Treasure",
+    kind: "duel",
+    grid: "10 × 10 yd",
+    players: "Pairs",
+    objective: "Get between an attacker and the target.",
+    equipment:
+      "Cones; one ball per player; two colors of pinnies; two small, secured goals (or cone gates)",
+    setup:
+      "Put a cone treasure at one end. Defender stands in front, attacker has a ball.",
+    play: [
+      "Attacker dribbles to touch treasure with the ball.",
+      "Defender stays between ball and treasure and tries to win it.",
+      "Swap roles every 30–45 seconds.",
+    ],
+    cues: ["Get goal-side.", "Slow them down."],
+    success: "Defender approaches then slows under control.",
+    mistakes: "Stabbing at the ball; wait for a loose touch.",
+    assistant: "Watch safe challenges and rotate pairs.",
+    easier: "Attacker walks.",
+    harder: "Add a second treasure target.",
+    low: "One pair plus coach.",
+    high: "Several grids with safe buffer space.",
+  },
+  defend: {
+    id: "defend",
+    name: "1v1 Defending",
+    kind: "duel",
+    grid: "15 × 12 yd",
+    players: "Pairs",
+    objective: "Delay attacker and win a loose ball.",
+    equipment:
+      "Cones; one ball per player; two colors of pinnies; two small, secured goals (or cone gates)",
+    setup:
+      "Two end goals. Attacker starts with ball; defender begins five yards away.",
+    play: [
+      "Defender approaches then slows down.",
+      "Stay between ball and goal; tackle when ball moves away.",
+      "If defender wins it, counter toward opposite goal. Swap starts each minute.",
+    ],
+    cues: ["Close, slow, stay.", "Win the loose touch."],
+    success: "Defender delays instead of diving in.",
+    mistakes: "Turning back or stabbing; model side-on balanced stance.",
+    assistant: "Observe one defending cue and feed restarts.",
+    easier: "Attacker dribbles slowly.",
+    harder: "Give attacker more width.",
+    low: "Coach attacks at child’s pace.",
+    high: "One grid per pair.",
+  },
+  "2v2": {
+    id: "2v2",
+    name: "2v2 Game",
+    kind: "match",
+    grid: "20 × 15 yd",
+    players: "4 per grid",
+    objective: "Attack and defend together.",
+    equipment:
+      "Cones; one ball per player; two colors of pinnies; two small, secured goals (or cone gates)",
+    setup:
+      "Two small secured goals and two teams of two. Place spare balls on touchline.",
+    play: [
+      "Play short games with quick restarts.",
+      "Everyone attacks and everyone defends.",
+      "Swap teammates between rounds.",
+    ],
+    cues: ["Who can help?", "Win it back."],
+    success: "Both players support the ball instead of watching.",
+    mistakes: "One player always waiting by goal; encourage all to move.",
+    assistant: "Manage a second game and restart quickly.",
+    easier: "Widen field to create space.",
+    harder: "Use two target goals at each end.",
+    low: "Play 2v1 with coach rotating.",
+    high: "Run parallel games; avoid large bench groups.",
+  },
+  corners: {
+    id: "corners",
+    name: "Four Corners",
+    kind: "gates",
+    grid: "20 × 20 yd",
+    players: "4–12; one ball each",
+    objective: "Look up and move to empty space.",
+    equipment: "Cones; one ball per player; two colors of pinnies",
+    setup:
+      "Mark a small gate in each corner; start with players spread around the middle.",
+    play: [
+      "Players dribble to any empty corner.",
+      "Turn and choose a different corner.",
+      "Try to arrive without following another player.",
+    ],
+    cues: ["Find empty grass.", "Look before you go."],
+    success: "Children spread rather than following a crowd.",
+    mistakes: "All choosing one corner; pause for one question.",
+    assistant: "Stand near crowded areas and encourage other options.",
+    easier: "Make corners larger.",
+    harder: "Coach blocks one corner so players adapt.",
+    low: "Use three corners.",
+    high: "Duplicate the area for more than eight.",
+  },
+  keepaway: {
+    id: "keepaway",
+    name: "3v1 Keep Away",
+    kind: "passing",
+    grid: "12 × 12 yd",
+    players: "4 per grid",
+    objective: "Make passing lanes with width and depth.",
+    equipment: "Cones; one ball per player; two colors of pinnies",
+    setup: "Three attackers spread around a square, one defender inside.",
+    play: [
+      "Attackers pass and move to stay available.",
+      "Defender tries to win ball; restart without punishment.",
+      "Rotate defender every 45 seconds, not only after mistakes.",
+    ],
+    cues: ["Can they see you?", "Make an angle."],
+    success: "Ball carrier has two visible passing options.",
+    mistakes: "Standing behind defender; move to a clear lane.",
+    assistant: "Time defender turns and make square larger if needed.",
+    easier: "Defender walks.",
+    harder: "Make square slightly smaller.",
+    low: "2v1 with coach as helper.",
+    high: "Groups of four with separate balls.",
+  },
+  wide: {
+    id: "wide",
+    name: "2v2 with Wide Gates",
+    kind: "wide",
+    grid: "22 × 18 yd",
+    players: "4 per grid",
+    objective: "Spread out to open attacking space.",
+    equipment:
+      "Cones; one ball per player; two colors of pinnies; two small, secured goals (or cone gates)",
+    setup: "Two scoring gates on each end, placed wide. Split into two teams.",
+    play: [
+      "Score by dribbling through either opponent gate.",
+      "Switch attack when ball is won.",
+      "Ask players what happens when teammates stand apart.",
+    ],
+    cues: ["Make the field big.", "See both goals."],
+    success: "Attackers offer different routes.",
+    mistakes: "Both teammates at ball; suggest one finding open grass.",
+    assistant: "Reset gates and quietly track one spacing success.",
+    easier: "Make gates wider.",
+    harder: "Narrow the gates.",
+    low: "2v1 with coach swapping sides.",
+    high: "Parallel small games.",
+  },
+  "3v3": {
+    id: "3v3",
+    name: "3v3 Game",
+    kind: "match",
+    grid: "25 × 20 yd",
+    players: "6 per grid",
+    objective: "Use space and simple teamwork in a game.",
+    equipment:
+      "Cones; one ball per player; two colors of pinnies; two small, secured goals (or cone gates)",
+    setup: "Two small goals; teams of three. Keep balls ready beside field.",
+    play: [
+      "Play freely with quick restarts.",
+      "Change starting positions each round.",
+      "Stop only briefly to ask one useful question.",
+    ],
+    cues: ["Find space.", "Everyone helps."],
+    success: "Players try a pass or dribble based on space.",
+    mistakes: "Frequent coach interruptions; observe a full round.",
+    assistant: "Run restarts and watch players off the ball.",
+    easier: "Use wider field.",
+    harder: "Add wide scoring gates.",
+    low: "Play 2v2 or 2v1.",
+    high: "Two simultaneous games; rotate groups.",
+  },
+  follow: {
+    id: "follow",
+    name: "Pass and Follow",
+    kind: "passing",
+    grid: "12 × 12 yd",
+    players: "Groups of 3",
+    objective: "Follow a pass and find a new supporting angle.",
+    equipment: "Cones; one ball per player; two colors of pinnies",
+    setup: "Make a triangle, one player at each corner and one ball.",
+    play: [
+      "Pass to a teammate.",
+      "After passing, move toward a new open spot, avoiding the passing lane.",
+      "Receiver controls and chooses the next pass.",
+    ],
+    cues: ["Move after your pass.", "Give an angle."],
+    success: "The triangle changes while players stay available.",
+    mistakes: "Running into receiver; move to open space instead.",
+    assistant: "Help groups maintain spacing and use both feet.",
+    easier: "Stay close to cone spots.",
+    harder: "Add a gentle walking defender.",
+    low: "Pairs pass through gates and move.",
+    high: "Several triangles with room between.",
+  },
+  direction: {
+    id: "direction",
+    name: "Direction Dribbling",
+    kind: "cross",
+    grid: "20 × 20 yd",
+    players: "Any; one ball each",
+    objective: "React quickly to a change of direction.",
+    equipment: "Cones; one ball per player; two colors of pinnies",
+    setup: "Use different color cones at each side of a square.",
+    play: [
+      "Everyone dribbles freely.",
+      "Coach names a side; turn and dribble toward it.",
+      "Before reaching the line, change to a new side.",
+    ],
+    cues: ["Turn and look.", "Find a free route."],
+    success: "Players react while keeping ball close.",
+    mistakes: "Big kicks across the square; slow down.",
+    assistant: "Call directions occasionally and watch for crowding.",
+    easier: "Walk and use two directions.",
+    harder: "Show a color instead of calling it.",
+    low: "Small area with two players.",
+    high: "Two separate squares.",
+  },
+  "1transition": {
+    id: "1transition",
+    name: "1v1 Transition",
+    kind: "transition",
+    grid: "15 × 12 yd",
+    players: "Pairs",
+    objective: "React when possession changes.",
+    equipment:
+      "Cones; one ball per player; two colors of pinnies; two small, secured goals (or cone gates)",
+    setup: "One goal at each end; one ball shared between two players.",
+    play: [
+      "Play 1v1 toward opposite goals.",
+      "When possession changes, new attacker goes forward immediately.",
+      "Other player recovers between ball and goal. Restart after scores.",
+    ],
+    cues: ["Won it? Go!", "Lost it? Get goal-side."],
+    success: "Both players change jobs quickly.",
+    mistakes: "Stopping after losing ball; praise quick recovery.",
+    assistant: "Keep new balls ready and observe reactions after turnovers.",
+    easier: "Coach announces each change.",
+    harder: "Allow quick counterattacks without coach cue.",
+    low: "Coach plays a gentle opponent.",
+    high: "Many parallel pair grids.",
+  },
+  "2transition": {
+    id: "2transition",
+    name: "2v2 Transition",
+    kind: "transition",
+    grid: "22 × 16 yd",
+    players: "4 per grid",
+    objective: "Change from attack to defense as a team.",
+    equipment:
+      "Cones; one ball per player; two colors of pinnies; two small, secured goals (or cone gates)",
+    setup: "Two goals, two teams of two, spare balls at the side.",
+    play: [
+      "Play 2v2.",
+      "After a turnover, both players change jobs immediately.",
+      "Restart quickly; praise the response more than goals.",
+    ],
+    cues: ["Help right away.", "Win it back."],
+    success: "Both teammates react to turnovers.",
+    mistakes: "One player stays upfield; ask who can help.",
+    assistant: "Feed a spare ball when out and observe nearest player.",
+    easier: "Use bigger field.",
+    harder: "Smaller field makes decisions faster.",
+    low: "Play 2v1 with coach helping.",
+    high: "Separate games of four.",
+  },
+  twogoalgame: {
+    id: "twogoalgame",
+    name: "Two-Goal Game",
+    kind: "wide",
+    grid: "25 × 20 yd",
+    players: "4–8",
+    objective: "Choose a new target after winning possession.",
+    equipment:
+      "Cones; one ball per player; two colors of pinnies; two small, secured goals (or cone gates)",
+    setup: "Two small goals at each end, with a wide gap between.",
+    play: [
+      "Play 2v2, 3v3, or 4v4.",
+      "Score in either opponent goal.",
+      "After winning the ball, look up for the free goal.",
+    ],
+    cues: ["Look forward.", "Where is the space?"],
+    success: "Players change the point of attack.",
+    mistakes: "Crowding one side; ask about the other goal.",
+    assistant: "Keep spare balls ready and reset gates.",
+    easier: "Wider goals.",
+    harder: "Make one goal temporarily unavailable for a short round.",
+    low: "2v1 with coach supporting.",
+    high: "Split into two games rather than one big game.",
+  },
+  match: {
+    id: "match",
+    name: "Small-Sided Soccer",
+    kind: "match",
+    grid: "25 × 20 yd for 4v4",
+    players: "4–8 per field",
+    objective: "Use the weekly skill freely in a real game.",
+    equipment:
+      "Cones; one ball per player; two colors of pinnies; two small, secured goals (or cone gates)",
+    setup:
+      "Two secured goals, two even teams, spare balls by touchline. Reduce size for 2v2.",
+    play: [
+      "Play 2v2, 3v3, or 4v4 based on attendance.",
+      "Use confirmed local restarts; allow quick learning retries.",
+      "Rotate starting positions and teammates. Keep interruptions brief.",
+    ],
+    cues: ["What do you see?", "Nice idea. Try again."],
+    success: "Everyone touches the ball and makes decisions.",
+    mistakes:
+      "Rigid positions or constant shouting; let children solve problems.",
+    assistant: "Manage restarts, rotate players, and observe the weekly skill.",
+    easier: "Widen field or add coach as neutral helper.",
+    harder: "Invite use of other foot; do not ban normal play.",
+    low: "Play 2v2 or 2v1 with coach.",
+    high: "Two fields, one coach per field; short rotations if needed.",
+  },
+  challenge: {
+    id: "challenge",
+    name: "Ball Challenge",
+    kind: "gates",
+    grid: "20 × 20 yd",
+    players: "Any; one ball each",
+    objective: "Review ball skills with personal goals.",
+    equipment: "Cones; one ball per player; two colors of pinnies",
+    setup: "Set gates and a clear dribbling loop with cones.",
+    play: [
+      "Try five sole stops, five turns, then five gates.",
+      "Choose a skill you want to improve.",
+      "Repeat without racing other players.",
+    ],
+    cues: ["Try both feet.", "Can you improve your own score?"],
+    success: "Players attempt skills willingly.",
+    mistakes: "Only using strongest foot; invite one try on the other.",
+    assistant: "Help set personal challenges and celebrate improvement.",
+    easier: "Choose only two skills.",
+    harder: "Combine turn and acceleration at each gate.",
+    low: "Coach joins a small group.",
+    high: "Duplicate the course to prevent queues.",
+  },
+  "1tournament": {
+    id: "1tournament",
+    name: "1v1 Festival Rounds",
+    kind: "duel",
+    grid: "15 × 12 yd per pair",
+    players: "Pairs",
+    objective: "Try independent decisions with different opponents.",
+    equipment:
+      "Cones; one ball per player; two colors of pinnies; two small, secured goals (or cone gates)",
+    setup: "Build parallel mini-fields with cone goals. Random pairs begin.",
+    play: [
+      "Play one-minute 1v1 rounds.",
+      "At signal, rotate one player to next field.",
+      "Start again with equal turns; no elimination or ranking.",
+    ],
+    cues: ["Be brave.", "Try something new."],
+    success: "All players keep playing after wins and losses.",
+    mistakes: "Too much focus on score; praise an idea or effort.",
+    assistant: "Time rounds and organize safe partner changes.",
+    easier: "Wider scoring gates.",
+    harder: "Narrower gates or a turn before attack.",
+    low: "One pair changes starting sides.",
+    high: "Parallel pair fields; coach joins odd player.",
+  },
+  "2tournament": {
+    id: "2tournament",
+    name: "2v2 Festival Rounds",
+    kind: "match",
+    grid: "20 × 15 yd per four",
+    players: "4 per field",
+    objective: "Solve game problems with a teammate.",
+    equipment:
+      "Cones; one ball per player; two colors of pinnies; two small, secured goals (or cone gates)",
+    setup: "Set several mini-fields and mixed teams of two.",
+    play: [
+      "Play two-minute rounds.",
+      "Change opponents and rotate partners.",
+      "Keep everyone playing with no knockout rounds.",
+    ],
+    cues: ["Help your friend.", "Play your idea."],
+    success: "Different players lead attacks.",
+    mistakes: "One child dominates; encourage sharing space and chances.",
+    assistant: "Handle round changes and keep balls ready.",
+    easier: "Wider field.",
+    harder: "Two goals per end.",
+    low: "2v1 with rotating defender.",
+    high: "Several fields; small groups stay active.",
+  },
+  restart: {
+    id: "restart",
+    name: "Restart Discovery",
+    kind: "restart",
+    grid: "25 × 20 yd",
+    players: "4–8",
+    objective: "Practice the restarts your league actually uses.",
+    equipment: "Cones; one ball per player; two colors of pinnies",
+    setup:
+      "Use a marked mini-field. Read confirmed kickoff, touchline, goal, corner, free kick, and distance rules below.",
+    play: [
+      "Demonstrate one confirmed restart in under 30 seconds.",
+      "Players take turns restarting while teammates find space.",
+      "If a rule is unconfirmed, stop that example and confirm with league. Play a dribbling game meanwhile.",
+    ],
+    cues: ["Where do we start?", "Give them space."],
+    success: "Players locate the ball and opponents correctly.",
+    mistakes: "Teaching an assumed rule; use Our League only.",
+    assistant:
+      "Read the relevant setting, place the ball, and rotate who restarts.",
+    easier: "Walk through a restart without opposition.",
+    harder: "Add passive opponents at confirmed distance.",
+    low: "Coach joins two players.",
+    high: "Two fields; repeat only confirmed restarts.",
+  },
+  restartgame: {
+    id: "restartgame",
+    name: "Restarts in a Game",
+    kind: "restart",
+    grid: "25 × 20 yd",
+    players: "4–8",
+    objective: "Apply confirmed local rules during play.",
+    equipment: "Cones; one ball per player; two colors of pinnies",
+    setup:
+      "Two small goals and clear touchlines. Keep the local restart rules visible.",
+    play: [
+      "Play a small game.",
+      "When ball goes out, ask players to choose the confirmed restart.",
+      "Give a quick retry and continue. Rotate the player taking restarts.",
+    ],
+    cues: ["Whose ball?", "Where can you help?"],
+    success: "Players restart with less help.",
+    mistakes: "Long lectures; one cue then play.",
+    assistant:
+      "Check restart distance from settings and keep spare balls ready.",
+    easier: "Coach places the ball.",
+    harder: "Players set up without a cue.",
+    low: "2v2 or coach as neutral helper.",
+    high: "Two fields with identical local rules.",
+  },
+  course: {
+    id: "course",
+    name: "Skills Course",
+    kind: "gates",
+    grid: "25 × 20 yd",
+    players: "4–12; one ball each",
+    objective: "Enjoy combining dribbling, turning, and finishing.",
+    equipment: "Cones; one ball per player; two colors of pinnies",
+    setup:
+      "Make three spaced stations: gates, turning cone, and shooting gate.",
+    play: [
+      "Start players at different stations.",
+      "Dribble through gates, turn around cone, finish through target.",
+      "Repeat at your own speed; no queues or elimination.",
+    ],
+    cues: ["Your own challenge.", "Keep moving."],
+    success: "Every child keeps moving and smiling.",
+    mistakes: "Bottlenecks at shooting; add extra targets.",
+    assistant: "Reset cones and help players find empty stations.",
+    easier: "Wider gates, walking pace.",
+    harder: "Use other foot through one section.",
+    low: "Two stations are enough.",
+    high: "Two copies of the circuit.",
+  },
+  teamchallenge: {
+    id: "teamchallenge",
+    name: "Team Challenge",
+    kind: "passing",
+    grid: "20 × 20 yd",
+    players: "4–12 in pairs",
+    objective: "Finish the season with a shared achievement.",
+    equipment: "Cones; one ball per player; two colors of pinnies",
+    setup: "Set passing gates. Put pairs at separate gates.",
+    play: [
+      "Each pair completes a pass then moves to a new gate.",
+      "Together count successful passes for one minute.",
+      "Repeat to beat the team’s own total; celebrate every contribution.",
+    ],
+    cues: ["We help each other.", "Try again."],
+    success: "Everyone contributes to a shared target.",
+    mistakes: "Blaming missed passes; reset and praise effort.",
+    assistant: "Count successes and support less confident pairs.",
+    easier: "Wider gates and short passes.",
+    harder: "Receive into space before next pass.",
+    low: "Coach is a partner.",
+    high: "Two groups track totals, then combine them.",
+  },
+  huddle: {
+    id: "huddle",
+    name: "Water + Team Huddle",
+    kind: "huddle",
+    grid: "Shaded safe sideline",
+    players: "Whole team",
+    objective: "Recover, reflect, and leave with one idea.",
+    equipment: "Cones; one ball per player; two colors of pinnies",
+    setup: "Bring players and their own water bottles to a safe shaded area.",
+    play: [
+      "Take a water break and check how players feel.",
+      "Ask the practice question; let two or three players answer.",
+      "Praise effort and give one simple game-day challenge.",
+    ],
+    cues: ["What did you discover?", "Thanks for trying."],
+    success: "Each child leaves encouraged with one thing to try.",
+    mistakes: "Long speeches; keep the talk short and let players drink.",
+    assistant: "Manage water, collect equipment, and help with safe pickup.",
+    easier: "Ask players to show the skill instead of explaining.",
+    harder: "Ask where they could use it in a game.",
+    low: "Let each player share one thought.",
+    high: "Keep the group together; invite brief answers.",
+  },
+};
+
+</script>
+    <script>
+window.PRACTICES = [
+  {
+    id: 1,
+    title: "Meet the Ball",
+    focus: "Dribbling & control",
+    objective: "Keep the ball close enough to stop whenever you choose.",
+    question: "Can you keep the ball close enough to stop it anytime?",
+    bonus: false,
+    activities: [
+      {
+        drill: "arrival",
+        minutes: 5,
+      },
+      {
+        drill: "redlight",
+        minutes: 10,
+      },
+      {
+        drill: "gates",
+        minutes: 10,
+      },
+      {
+        drill: "twogoal",
+        minutes: 13,
+      },
+      {
+        drill: "match",
+        minutes: 17,
+      },
+      {
+        drill: "huddle",
+        minutes: 5,
+      },
+    ],
+  },
+  {
+    id: 2,
+    title: "Change Direction",
+    focus: "Turning & open space",
+    objective: "Turn away from pressure, then accelerate into open grass.",
+    question: "Can you find the open space?",
+    bonus: false,
+    activities: [
+      {
+        drill: "traffic",
+        minutes: 5,
+      },
+      {
+        drill: "turns",
+        minutes: 10,
+      },
+      {
+        drill: "sharks",
+        minutes: 10,
+      },
+      {
+        drill: "escape",
+        minutes: 13,
+      },
+      {
+        drill: "match",
+        minutes: 17,
+      },
+      {
+        drill: "huddle",
+        minutes: 5,
+      },
+    ],
+  },
+  {
+    id: 3,
+    title: "Beat a Player",
+    focus: "1v1 & protecting the ball",
+    objective: "Protect your ball and try a move to beat an opponent.",
+    question: "Can you get past the defender?",
+    bonus: false,
+    activities: [
+      {
+        drill: "shield",
+        minutes: 5,
+        note: "Start with every player dribbling their own ball; introduce partner shielding in the final two minutes.",
+      },
+      {
+        drill: "knockout",
+        minutes: 10,
+      },
+      {
+        drill: "endzone",
+        minutes: 10,
+      },
+      {
+        drill: "goal",
+        minutes: 13,
+      },
+      {
+        drill: "match",
+        minutes: 17,
+      },
+      {
+        drill: "huddle",
+        minutes: 5,
+      },
+    ],
+  },
+  {
+    id: 4,
+    title: "Pass & Receive",
+    focus: "Passing & first touch",
+    objective: "Find a teammate, pass accurately, and move to help again.",
+    question: "Can you find your teammate?",
+    bonus: false,
+    activities: [
+      {
+        drill: "partners",
+        minutes: 5,
+        note: "Start with a ball each and soft stopping touches; pair up for the final two minutes.",
+      },
+      {
+        drill: "passgates",
+        minutes: 10,
+      },
+      {
+        drill: "passmove",
+        minutes: 10,
+      },
+      {
+        drill: "2v1",
+        minutes: 13,
+      },
+      {
+        drill: "match",
+        minutes: 17,
+        note: "Celebrate a pass that helps the team. Never require a pass before a goal counts.",
+      },
+      {
+        drill: "huddle",
+        minutes: 5,
+      },
+    ],
+  },
+  {
+    id: 5,
+    title: "Score Goals",
+    focus: "Shooting & finishing",
+    objective: "See the target and finish with accuracy before power.",
+    question: "Can you see the goal before you shoot?",
+    bonus: false,
+    activities: [
+      {
+        drill: "shootgates",
+        minutes: 5,
+        note: "Arrival: every player dribbles through a shooting gate with their own ball. Pair shooting starts when everyone arrives.",
+      },
+      {
+        drill: "cone",
+        minutes: 10,
+      },
+      {
+        drill: "dribbleshoot",
+        minutes: 10,
+      },
+      {
+        drill: "goal",
+        minutes: 13,
+      },
+      {
+        drill: "match",
+        minutes: 17,
+      },
+      {
+        drill: "huddle",
+        minutes: 5,
+      },
+    ],
+  },
+  {
+    id: 6,
+    title: "Win It Back",
+    focus: "1v1 defending",
+    objective: "Get goal-side, slow down, and win a loose touch.",
+    question: "Can you stay between the ball and our goal?",
+    bonus: false,
+    activities: [
+      {
+        drill: "mirror",
+        minutes: 5,
+        note: "Arrival: each child dribbles and mirrors the coach. Introduce pairs only as players arrive.",
+      },
+      {
+        drill: "treasure",
+        minutes: 10,
+      },
+      {
+        drill: "defend",
+        minutes: 10,
+      },
+      {
+        drill: "2v2",
+        minutes: 13,
+      },
+      {
+        drill: "match",
+        minutes: 17,
+      },
+      {
+        drill: "huddle",
+        minutes: 5,
+      },
+    ],
+  },
+  {
+    id: 7,
+    title: "Find Space",
+    focus: "Width & support",
+    objective: "Give the player on the ball an open passing option.",
+    question: "Can you make the field big?",
+    bonus: false,
+    activities: [
+      {
+        drill: "corners",
+        minutes: 5,
+      },
+      {
+        drill: "keepaway",
+        minutes: 10,
+        note: "Rotate the defender every 45 seconds so everyone has the ball often.",
+      },
+      {
+        drill: "wide",
+        minutes: 10,
+      },
+      {
+        drill: "3v3",
+        minutes: 13,
+      },
+      {
+        drill: "match",
+        minutes: 17,
+      },
+      {
+        drill: "huddle",
+        minutes: 5,
+      },
+    ],
+  },
+  {
+    id: 8,
+    title: "Attack Together",
+    focus: "Dribble, pass, or shoot",
+    objective: "Look at the space and choose how to help the attack.",
+    question: "What do you see?",
+    bonus: false,
+    activities: [
+      {
+        drill: "follow",
+        minutes: 5,
+        note: "Start with one ball each for free dribbling; introduce passing triangles as players arrive.",
+      },
+      {
+        drill: "2v1",
+        minutes: 10,
+      },
+      {
+        drill: "2v2",
+        minutes: 10,
+      },
+      {
+        drill: "3v3",
+        minutes: 13,
+      },
+      {
+        drill: "match",
+        minutes: 17,
+      },
+      {
+        drill: "huddle",
+        minutes: 5,
+      },
+    ],
+  },
+  {
+    id: 9,
+    title: "React & Go",
+    focus: "Transition & decisions",
+    objective: "React together as soon as possession changes.",
+    question: "We lost it — what do we do?",
+    bonus: false,
+    activities: [
+      {
+        drill: "direction",
+        minutes: 5,
+      },
+      {
+        drill: "1transition",
+        minutes: 10,
+      },
+      {
+        drill: "2transition",
+        minutes: 10,
+      },
+      {
+        drill: "twogoalgame",
+        minutes: 13,
+      },
+      {
+        drill: "match",
+        minutes: 17,
+      },
+      {
+        drill: "huddle",
+        minutes: 5,
+      },
+    ],
+  },
+  {
+    id: 10,
+    title: "Putting It Together",
+    focus: "Game intelligence",
+    objective:
+      "Show what you have learned with very little coach interruption.",
+    question: "Which skill helped you today?",
+    bonus: false,
+    activities: [
+      {
+        drill: "challenge",
+        minutes: 5,
+      },
+      {
+        drill: "1tournament",
+        minutes: 10,
+      },
+      {
+        drill: "2tournament",
+        minutes: 10,
+      },
+      {
+        drill: "match",
+        minutes: 13,
+      },
+      {
+        drill: "match",
+        minutes: 17,
+        note: "Play freely for 12 minutes, then use five minutes for a shooting challenge at several gates. Everyone stays active.",
+      },
+      {
+        drill: "huddle",
+        minutes: 5,
+      },
+    ],
+  },
+  {
+    id: 11,
+    title: "Rules & Restarts",
+    focus: "Optional • local rules",
+    objective: "Learn the confirmed local restarts through short games.",
+    question: "Where do we restart, and who takes it?",
+    bonus: true,
+    activities: [
+      {
+        drill: "arrival",
+        minutes: 5,
+      },
+      {
+        drill: "restart",
+        minutes: 10,
+        note: "Focus on confirmed kickoff, touchline, and goal restarts.",
+      },
+      {
+        drill: "restart",
+        minutes: 10,
+        note: "Focus on confirmed corners, free kicks, and opponent distance.",
+      },
+      {
+        drill: "restartgame",
+        minutes: 13,
+      },
+      {
+        drill: "match",
+        minutes: 17,
+      },
+      {
+        drill: "huddle",
+        minutes: 5,
+      },
+    ],
+  },
+  {
+    id: 12,
+    title: "Soccer Festival",
+    focus: "Optional • celebration",
+    objective: "Enjoy the game, try new things, and celebrate everyone.",
+    question: "What was your favorite moment this season?",
+    bonus: true,
+    activities: [
+      {
+        drill: "challenge",
+        minutes: 5,
+      },
+      {
+        drill: "1tournament",
+        minutes: 10,
+      },
+      {
+        drill: "course",
+        minutes: 10,
+      },
+      {
+        drill: "teamchallenge",
+        minutes: 13,
+      },
+      {
+        drill: "2tournament",
+        minutes: 17,
+      },
+      {
+        drill: "huddle",
+        minutes: 5,
+      },
+    ],
+  },
+];
+
+</script>
+    <script>
+window.RULE_FIELDS = [
+  ["name", "League / organization", "text"],
+  ["players", "Players per side", "number"],
+  ["goalkeeper", "Goalkeeper", "yesno"],
+  ["ball", "Ball size", "text"],
+  ["field", "Field size", "text"],
+  ["goal", "Goal size", "text"],
+  ["duration", "Total playing minutes", "number"],
+  ["periods", "Halves or quarters", "periods"],
+  ["subs", "Substitution procedure", "text"],
+  ["minimum", "Minimum playing time / requirement", "text"],
+  ["touchline", "Touchline restart", "text"],
+  ["goalkick", "Goal kick procedure", "text"],
+  ["corner", "Corner kick procedure", "text"],
+  ["kickoff", "Kickoff procedure", "text"],
+  ["freekick", "Free kick type", "text"],
+  ["distance", "Opponent restart distance", "text"],
+  ["offside", "Offside", "yesno"],
+  ["heading", "Heading", "yesno"],
+  ["handball", "Handball guidance", "text"],
+  ["penalty", "Penalty kicks", "yesno"],
+  ["buildout", "Build-out line", "text"],
+  ["mercy", "Mercy rule", "text"],
+  ["other", "Other local rules", "text"],
+];
+window.REFERENCE = {
+  Ball: "Size 3",
+  Format: "4v4, small fields and goals",
+  "Goalkeeper / penalty area": "Neither in traditional AYSO 4v4",
+  "Offside / heading": "Neither in this reference format",
+  "Free kicks": "Indirect; opponents approximately 5 yards away",
+  "Touchline restart": "Region determines throw, pass, or dribble-in",
+  Positions: "Rotate roles; development comes before the result.",
+};
+
+</script>
+    <script>
+window.CUES = {
+  attack: [
+    "Find space.",
+    "Can you go forward?",
+    "Dribble if you have space.",
+    "Pass if a teammate has better space.",
+    "See the goal.",
+  ],
+  defend: [
+    "Get between the ball and our goal.",
+    "Slow the attacker down.",
+    "Win it back.",
+    "Everyone helps defend.",
+  ],
+  general: [
+    "Great effort.",
+    "Nice idea.",
+    "Try again.",
+    "What did you see?",
+    "Can you help your teammate?",
+  ],
+  equipment: [
+    "One ball per player (size confirmed with league)",
+    "20+ disc cones",
+    "Two colors of pinnies",
+    "Two small secured goals",
+    "Ball pump",
+    "First aid kit + cold pack",
+    "Water",
+    "Clipboard (optional)",
+  ],
+  arrival: [
+    "Goals secure",
+    "Field safe",
+    "Balls inflated",
+    "Cones ready",
+    "Pinnies available",
+    "First aid ready",
+    "Water available",
+    "League rules checked",
+    "Attendance checked",
+    "Rotations ready",
+  ],
+};
+window.SOURCES = [
+  ["AYSO • 8U reference rules", "https://wiki.ayso.org/wiki/8U_Official"],
+  [
+    "U.S. Soccer • U7/U8 age-group guide",
+    "https://www.ussoccer.com/us-way/player-development/environment/age-group-guide/u7-u8",
+  ],
+  [
+    "U.S. Soccer • Coaching approach",
+    "https://www.ussoccer.com/us-way/player-development/environment/coaching-approach",
+  ],
+  [
+    "U.S. Soccer • Game models",
+    "https://www.ussoccer.com/us-way/player-development/game/game-models",
+  ],
+  [
+    "U.S. Soccer • Formations",
+    "https://www.ussoccer.com/us-way/player-development/game/formations",
+  ],
+  [
+    "U.S. Soccer • Extreme weather",
+    "https://www.ussoccer.com/soccer-forward/resource-hub/managing-extreme-weather-conditions",
+  ],
+  [
+    "U.S. Soccer • Heading initiative",
+    "https://www.ussoccer.com/soccer-forward/resource-hub/the-concussion-initiative-and-reducing-heading",
+  ],
+  [
+    "CDC HEADS UP • Concussion response",
+    "https://www.cdc.gov/heads-up/response/index.html",
+  ],
+];
+
+</script>
+    <script>
+/* 8U Coach — no dependencies, accounts, or network data services. */
+(() => {
+  "use strict";
+  const KEY = "8u-coach-v1";
+  const freshGame = () => ({
+    running: false,
+    period: 1,
+    elapsed: 0,
+    last: 0,
+    field: [],
+    stats: {},
+    roles: {},
+    finished: false,
+  });
+  const defaults = () => ({
+    version: 1,
+    hot: false,
+    coach: "head",
+    currentPractice: 1,
+    completed: [],
+    checks: {},
+    rules: {},
+    roster: [],
+    game: freshGame(),
+    live: null,
+    nextGame: { date: "", time: "", opponent: "", location: "" },
+    huddle:
+      "Play hard. Help your teammates. Find space. When we lose the ball, win it back. Most importantly — have fun.",
+  });
+  let state = defaults(),
+    storageOK = true,
+    loadWarning = "";
+  try {
+    const raw = localStorage.getItem(KEY);
+    if (raw) {
+      const parsed = JSON.parse(raw);
+      if (
+        parsed.version !== 1 ||
+        !Array.isArray(parsed.roster) ||
+        typeof parsed.rules !== "object"
+      )
+        throw Error("invalid");
+      state = { ...state, ...parsed };
+    }
+  } catch (e) {
+    storageOK = false;
+    loadWarning =
+      "Saved data could not be read. This session is temporary; your previous saved data has not been overwritten.";
+  }
+  let route = "today",
+    gameTab = state.gameTab || "arrival",
+    rulesTab = "ours",
+    editingId = null,
+    toastTimer,
+    dialogReturn = null;
+  const $ = (s) => document.querySelector(s),
+    esc = (v) =>
+      String(v ?? "").replace(
+        /[&<>"']/g,
+        (c) =>
+          ({
+            "&": "&amp;",
+            "<": "&lt;",
+            ">": "&gt;",
+            '"': "&quot;",
+            "'": "&#39;",
+          })[c],
+      );
+  function save() {
+    if (!storageOK) return;
+    try {
+      localStorage.setItem(KEY, JSON.stringify(state));
+    } catch (e) {
+      storageOK = false;
+      showStorageWarning(
+        "Device storage is unavailable or full. Changes in this session may be lost.",
+      );
+    }
+  }
+  function showStorageWarning(t) {
+    $("#storage-warning").hidden = false;
+    $("#storage-warning").textContent = t;
+  }
+  if (!storageOK) showStorageWarning(loadWarning);
+  function toast(t) {
+    $("#toast").textContent = t;
+    $("#toast").style.display = "block";
+    clearTimeout(toastTimer);
+    toastTimer = setTimeout(() => ($("#toast").style.display = "none"), 3000);
+  }
+  const fmt = (s) => {
+    s = Math.max(0, Math.ceil(s));
+    return `${Math.floor(s / 60)
+      .toString()
+      .padStart(2, "0")}:${(s % 60).toString().padStart(2, "0")}`;
+  };
+  const btn = (label, action, cls = "", extra = "") =>
+    `<button class="${cls}" data-action="${action}" ${extra}>${label}</button>`;
+  const go = (label, to, cls = "") =>
+    `<button class="${cls}" data-go="${to}">${label}</button>`;
+  const list = (items) =>
+    `<ul>${items.map((x) => `<li>${esc(x)}</li>`).join("")}</ul>`;
+  const pill = (s, cls = "") => `<span class="tag ${cls}">${esc(s)}</span>`;
+  const heading = (eyebrow, title, sub = "", action = "") =>
+    `<div class="page-heading"><div><div class="eyebrow">${eyebrow}</div><h1>${title}</h1>${sub ? `<p class="muted">${sub}</p>` : ""}</div>${action}</div>`;
+  const rule = (id) =>
+    state.rules[id]
+      ? esc(state.rules[id])
+      : '<span class="unconfirmed">CONFIRM WITH LEAGUE</span>';
+  const hotNotice = () =>
+    state.hot
+      ? '<div class="notice">HOT DAY • Use shorter play bursts, offer extra water and shade, and watch for fatigue. Follow league heat guidance.</div>'
+      : "";
+  function checkList(items, key) {
+    return `<div class="checks">${items.map((t, i) => `<label class="check"><input type="checkbox" data-check="${key}-${i}" ${state.checks[key + "-" + i] ? "checked" : ""}>${esc(t)}</label>`).join("")}</div>`;
+  }
+  function icons(name) {
+    const paths = {
+      today: '<path d="m3 10 9-7 9 7v10H3z"/><path d="M9 20v-7h6v7"/>',
+      practices:
+        '<rect x="5" y="4" width="14" height="17" rx="2"/><path d="M9 3h6v4H9zM9 12h6M9 16h6"/>',
+      game: '<rect x="3" y="5" width="18" height="14" rx="1"/><path d="M12 5v14"/><circle cx="12" cy="12" r="3"/>',
+      team: '<circle cx="9" cy="8" r="3"/><path d="M3 21v-3a6 6 0 0 1 12 0v3M17 5a3 3 0 0 1 0 6M18 15a4 4 0 0 1 3 4v2"/>',
+      rules: '<path d="M4 3h12l4 4v14H4zM15 3v5h5M8 12h8M8 16h8"/>',
+    };
+    return `<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" aria-hidden="true">${paths[name]}</svg>`;
+  }
+  function nav() {
+    const active =
+      route === "practice" || route === "drill" ? "practices" : route;
+    $("#nav").innerHTML = [
+      ["today", "Today"],
+      ["practices", "Practices"],
+      ["game", "Game day"],
+      ["team", "Team"],
+      ["rules", "Rules"],
+    ]
+      .map(
+        ([k, n]) =>
+          `<button data-go="${k}" class="${active === k ? "active" : ""}" ${active === k ? 'aria-current="page"' : ""}>${icons(k)}${n}</button>`,
+      )
+      .join("");
+  }
+  // Functional SVG diagrams. Numbers and shapes distinguish teams without relying on color.
+  function pitch(
+    kind = "match",
+    label = "Practice setup",
+    roleNames = null,
+    drillId = "",
+  ) {
+    const player = (x, y, n, opp = false) =>
+      `<${opp ? "rect" : "circle"} ${opp ? `x="${x - 10}" y="${y - 10}" width="20" height="20" rx="3"` : `cx="${x}" cy="${y}" r="10"`} fill="${opp ? "#ffcf80" : "#b6f47b"}" stroke="#0a2118" stroke-width="2"/><text x="${x}" y="${y + 4}" text-anchor="middle" font-size="11" font-weight="700" fill="#112616">${n}</text>`;
+    const ball = (x, y) =>
+      `<circle cx="${x}" cy="${y}" r="4" fill="white" stroke="#112616"/>`;
+    const cone = (x, y) => `<path d="M${x} ${y - 5}l-5 9h10z" fill="#ffcf80"/>`;
+    const arrow = (x, y, x2, y2) =>
+      `<path d="M${x} ${y}L${x2} ${y2}" stroke="white" stroke-width="2" stroke-dasharray="5 4"/><path d="M${x2 - 4} ${y2 + 6}l4-6 4 6" fill="none" stroke="white" stroke-width="2" transform="rotate(${(Math.atan2(y2 - y, x2 - x) * 180) / Math.PI + 90} ${x2} ${y2})"/>`;
+    let shapes = "";
+    if (["shield", "mirror", "treasure"].includes(drillId)) {
+      shapes +=
+        player(146, 143, 1) +
+        ball(159, 129) +
+        player(165, 85, 2, true) +
+        arrow(133, 115, 103, 91);
+      if (drillId === "treasure") shapes += cone(165, 45);
+    } else if (
+      ["traffic", "arrival", "knockout", "direction", "corners"].includes(
+        drillId,
+      )
+    ) {
+      shapes +=
+        player(75, 75, 1) +
+        ball(89, 67) +
+        player(155, 140, 2) +
+        ball(170, 130) +
+        player(244, 95, 3) +
+        ball(259, 86) +
+        arrow(180, 126, 214, 64);
+      [
+        [28, 28],
+        [302, 28],
+        [28, 183],
+        [302, 183],
+      ].forEach(([x, y]) => (shapes += cone(x, y)));
+      if (drillId === "corners")
+        [
+          [45, 40],
+          [260, 40],
+          [45, 168],
+          [260, 168],
+        ].forEach(([x, y]) => (shapes += cone(x, y) + cone(x + 22, y)));
+      if (drillId === "knockout") shapes += cone(115, 183) + cone(145, 183);
+    } else if (["partners", "passgates"].includes(drillId)) {
+      shapes +=
+        player(70, 105, 1) +
+        player(265, 105, 2) +
+        ball(87, 104) +
+        cone(165, 82) +
+        cone(165, 130) +
+        arrow(100, 105, 245, 105);
+    } else if (drillId === "cone") {
+      shapes +=
+        player(80, 150, 1) +
+        player(245, 150, 2) +
+        ball(81, 134) +
+        ball(246, 134) +
+        cone(80, 50) +
+        cone(245, 50) +
+        arrow(80, 124, 80, 63) +
+        arrow(245, 124, 245, 63);
+    } else if (kind === "gates") {
+      [
+        [75, 60],
+        [190, 55],
+        [125, 135],
+        [240, 140],
+        [265, 65],
+      ].forEach(([x, y]) => (shapes += cone(x, y) + cone(x + 24, y)));
+      shapes +=
+        player(65, 125, 1) +
+        ball(78, 116) +
+        arrow(82, 108, 90, 75) +
+        player(180, 105, 2) +
+        ball(193, 97) +
+        player(260, 175, 3);
+    } else if (kind === "passing") {
+      shapes +=
+        player(70, 150, 1) +
+        player(165, 48, 2) +
+        player(265, 150, 3) +
+        ball(85, 137) +
+        arrow(91, 128, 150, 66) +
+        arrow(182, 63, 249, 133) +
+        cone(153, 92) +
+        cone(174, 104);
+      if (drillId === "keepaway") shapes += player(165, 111, "D", true);
+    } else if (kind === "cross") {
+      shapes +=
+        '<path d="M28 52h274M28 159h274" stroke="#a9c6b4" stroke-dasharray="6 5"/>';
+      shapes +=
+        player(65, 175, 1) +
+        ball(80, 164) +
+        arrow(80, 145, 82, 75) +
+        player(161, 175, 2) +
+        ball(174, 166) +
+        player(253, 175, 3) +
+        (drillId === "redlight"
+          ? player(176, 40, "C", true)
+          : player(176, 101, "D", true));
+    } else if (kind === "huddle") {
+      shapes +=
+        player(100, 90, 1) +
+        player(160, 60, 2) +
+        player(225, 90, 3) +
+        player(125, 147, 4) +
+        player(202, 147, 5) +
+        player(164, 107, "C", true);
+    } else if (kind === "diamond") {
+      shapes +=
+        '<path d="M165 40 65 105 165 172 265 105Z" fill="none" stroke="#82a78e" stroke-dasharray="5 5"/>';
+      [
+        [165, 40, "Front"],
+        [65, 105, "Left"],
+        [265, 105, "Right"],
+        [165, 172, "Back"],
+      ].forEach(([x, y, n], i) => {
+        shapes +=
+          player(x, y, i + 1) +
+          `<text x="${x}" y="${y + 25}" text-anchor="middle" fill="white" font-size="12">${esc(roleNames?.[i] || n)}</text>`;
+      });
+    } else if (["duel", "endzone"].includes(kind)) {
+      shapes +=
+        kind === "endzone"
+          ? '<path d="M28 57h274M28 155h274" stroke="#a9c6b4" stroke-dasharray="6 5"/>'
+          : '<rect x="140" y="15" width="50" height="12" fill="none" stroke="white"/><rect x="140" y="183" width="50" height="12" fill="none" stroke="white"/>';
+      shapes +=
+        player(155, 147, 1) +
+        ball(169, 132) +
+        player(178, 88, 2, true) +
+        arrow(128, 132, 109, 62);
+    } else if (kind === "shoot") {
+      shapes +=
+        '<rect x="120" y="16" width="90" height="12" fill="none" stroke="white"/>';
+      shapes +=
+        player(112, 150, 1) +
+        ball(125, 136) +
+        arrow(133, 122, 162, 40) +
+        player(242, 151, 2) +
+        cone(74, 167) +
+        cone(260, 167);
+    } else if (kind === "wide") {
+      [
+        [55, 20],
+        [231, 20],
+        [55, 184],
+        [231, 184],
+      ].forEach(
+        ([x, y]) =>
+          (shapes += `<rect x="${x}" y="${y}" width="44" height="9" fill="none" stroke="white"/>`),
+      );
+      shapes +=
+        player(82, 140, 1) +
+        ball(90, 124) +
+        (drillId === "twogoal" ? "" : player(232, 136, 2)) +
+        player(157, 74, 3, true) +
+        (["wide", "twogoalgame"].includes(drillId)
+          ? player(241, 72, 4, true)
+          : "") +
+        arrow(97, 110, 90, 43);
+    } else {
+      shapes +=
+        '<path d="M28 105h274" stroke="#82a78e"/><circle cx="165" cy="105" r="28" fill="none" stroke="#82a78e"/><rect x="140" y="15" width="50" height="12" fill="none" stroke="white"/><rect x="140" y="183" width="50" height="12" fill="none" stroke="white"/>';
+      shapes +=
+        player(80, 146, 1) +
+        player(234, 132, 2) +
+        (["2v2", "2tournament", "2transition"].includes(drillId)
+          ? ""
+          : player(164, 165, 3)) +
+        ball(93, 131) +
+        player(101, 65, 4, true) +
+        player(237, 65, 5, true) +
+        (["2v2", "2tournament", "2transition"].includes(drillId)
+          ? ""
+          : player(166, 45, 6, true)) +
+        arrow(106, 122, 122, 88);
+      if (kind === "restart")
+        shapes += cone(30, 30) + ball(36, 43) + arrow(39, 48, 85, 72);
+    }
+    return `<svg class="pitch" viewBox="0 0 330 215" role="img" aria-label="${esc(label)}"><title>${esc(label)}</title><rect x="28" y="28" width="274" height="155" fill="none" stroke="#a9c6b4" stroke-width="1.5"/>${shapes}</svg>`;
+  }
+  const legend =
+    '<p class="legend">● Player · ■ Opponent · △ Cone · small white dot: ball · dashed arrow: movement · outlined box: goal. Layout is schematic.</p>';
+  function today() {
+    const p =
+      PRACTICES.find((x) => x.id === state.currentPractice) || PRACTICES[0];
+    return (
+      heading(
+        "READY FOR THE FIELD",
+        "Let’s get them playing.",
+        "Your next session, ready to run.",
+        pill(
+          state.coach === "head" ? "HEAD COACH" : "ASSISTANT COACH",
+          "green",
+        ),
+      ) +
+      `<div class="grid"><div class="stack"><section class="card feature"><div class="row">${pill("NEXT PRACTICE", "green")}<span class="small muted">${String(p.id).padStart(2, "0")} / 12</span></div><div class="space"><div class="eyebrow">${esc(p.focus)} · 60 MIN</div><h2>${esc(p.title)}</h2><p>${esc(p.objective)}</p></div>${pitch("gates", "Dribbling through cone gates")}<div class="gap space">${btn(state.live ? "Resume practice" : "Start practice", state.live ? "resumeLive" : "startPractice", "primary", `data-id="${p.id}"`)}${go("View plan", `practice/${p.id}`)}</div></section><section class="card"><div class="row"><h2>Ready bag</h2>${btn("Reset", "resetChecks", "link", 'data-key="bag"')}</div>${checkList(["Balls", "Cones", "Pinnies", "Water", "Roster", "First aid"], "bag")}</section></div><div class="stack"><section class="card"><div class="row"><div class="eyebrow">NEXT GAME</div>${btn("Edit", "editGame", "link")}</div><h2>${esc(state.nextGame.opponent || "Game day starts here")}</h2><p class="muted">${state.nextGame.date ? esc(formatDate(state.nextGame.date)) : "Add your next game"}${state.nextGame.time ? " · " + esc(state.nextGame.time) : ""}<br>${esc(state.nextGame.location || "Date, time, and field all in one place.")}</p>${go("Open game day", "game", "wide")}</section><section class="card"><h2>One voice. Simple cues.</h2><div class="eyebrow">WE HAVE THE BALL</div><p>Find space. Go forward. Look for a teammate or the goal.</p><div class="eyebrow space">THEY HAVE THE BALL</div><p>Get between the ball and our goal. Slow them down. Win it back.</p></section><section class="card"><label class="switch"><input type="checkbox" id="hot" ${state.hot ? "checked" : ""}><span><strong>Hot day mode</strong><br><span class="muted small">More water. Shorter play bursts.</span></span></label>${hotNotice()}</section></div></div><p class="footer-note">${state.completed.length} / 12 practices completed · ${state.roster.length} players on this device · ${storageOK ? "Changes save automatically" : "Temporary session"}</p>`
+    );
+  }
+  function formatDate(d) {
+    return new Date(d + "T12:00:00").toLocaleDateString(undefined, {
+      weekday: "short",
+      month: "short",
+      day: "numeric",
+    });
+  }
+  function practices() {
+    return (
+      heading(
+        "THE SEASON",
+        "Small steps. Big confidence.",
+        "10 core practices + 2 optional sessions. Every plan is 60 minutes.",
+      ) +
+      `<div class="practice-list">${PRACTICES.map((p) => `<button class="card practice-card" data-go="practice/${p.id}"><div class="row"><span class="num">${String(p.id).padStart(2, "0")}</span>${pill(state.completed.includes(p.id) ? "COMPLETE" : p.bonus ? "BONUS" : "60 MIN", state.completed.includes(p.id) ? "green" : "")}</div><h2>${esc(p.title)}</h2><p class="muted">${esc(p.focus)}</p><span class="small" style="color:var(--green)">Open practice →</span></button>`).join("")}</div>`
+    );
+  }
+  function practice(id) {
+    const p = PRACTICES.find((x) => x.id === id) || PRACTICES[0];
+    let min = 0;
+    return (
+      heading(
+        `PRACTICE ${String(p.id).padStart(2, "0")} · 60 MIN`,
+        esc(p.title),
+        esc(p.objective),
+        go("All plans", "practices"),
+      ) +
+      `<div class="grid"><section class="card"><div class="row"><h2>The session</h2>${pill(p.bonus ? "OPTIONAL" : "CORE PLAN", "green")}</div><ol class="timeline">${p.activities
+        .map((a, i) => {
+          const start = min;
+          min += a.minutes;
+          return `<li><button data-go="drill/${p.id}/${i}"><span class="minute">${start}–${min}<br>min</span><span><strong>${esc(DRILLS[a.drill].name)}</strong><small>${a.minutes} minutes · Setup & coaching →</small></span></button></li>`;
+        })
+        .join(
+          "",
+        )}</ol></section><aside class="stack"><section class="card feature"><div class="eyebrow">ONE QUESTION TO KEEP</div><p class="cue">“${esc(p.question)}”</p><p class="muted">Fun, ball contact, and decisions. Keep explanations short and let them play.</p>${btn("Start this practice", "startPractice", "primary wide", `data-id="${p.id}"`)}<div class="gap space">${btn("Set as next practice", "setNext", "", `data-id="${p.id}"`)}${btn(state.completed.includes(p.id) ? "Mark incomplete" : "Mark complete", "toggleComplete", "", `data-id="${p.id}"`)}</div></section><section class="card"><h3>Two coaches, one plan</h3><p><strong>Head:</strong> demonstrate briefly, ask one question, observe.</p><p><strong>Assistant:</strong> organize players, set up the next grid, keep balls and water ready.</p></section>${hotNotice()}</aside></div>`
+    );
+  }
+  function restartRules() {
+    return `<div class="notice">Use confirmed local rules. Do not run an unconfirmed restart example.</div><dl class="rules-list">${["kickoff", "touchline", "goalkick", "corner", "freekick", "distance"].map((k) => `<div><dt>${esc(RULE_FIELDS.find((f) => f[0] === k)[1])}</dt><dd>${rule(k)}</dd></div>`).join("")}</dl>${go("Confirm league rules", "league", "space")}`;
+  }
+  function roleCard(d) {
+    return `<section class="role ${state.coach === "assistant" ? "emphasized" : ""}"><h3>Assistant coach</h3><p>${esc(d.assistant)}</p></section>`;
+  }
+  function drillDetail(pid, index) {
+    const p = PRACTICES.find((x) => x.id === pid) || PRACTICES[0],
+      a = p.activities[index] || p.activities[0],
+      d = DRILLS[a.drill];
+    return (
+      heading(
+        `PRACTICE ${p.id} · ACTIVITY ${index + 1} / 6`,
+        esc(d.name),
+        `${a.minutes} minutes · ${esc(d.players)}`,
+        go("Back to plan", `practice/${p.id}`),
+      ) +
+      `<div class="grid"><div class="stack"><section class="card">${pitch(d.kind, d.name + " setup", null, d.id)}${legend}<p><strong>Area:</strong> ${esc(d.grid)} <span class="muted small">(adjust for space and ability)</span></p><p><strong>Equipment:</strong> ${esc(d.equipment)}</p><h3>Set up</h3><p>${esc(d.setup)}</p></section><section class="card"><h2>How to play</h2>${a.note ? `<div class="notice green">${esc(a.note)}</div>` : ""}<ol>${d.play.map((x) => `<li>${esc(x)}</li>`).join("")}</ol>${d.kind === "restart" ? restartRules() : ""}</section></div><div class="stack"><section class="card"><div class="eyebrow">THE GOAL</div><p>${esc(d.objective)}</p><p class="cue">${d.cues.map(esc).join("<br>")}</p><h3>Success looks like</h3><p>${esc(d.success)}</p><h3>Watch for</h3><p class="muted">${esc(d.mistakes)}</p></section>${roleCard(d)}<section class="card"><h2>Adjust on the field</h2>${[
+        ["Make it easier", d.easier],
+        ["Make it harder", d.harder],
+        ["Fewer players", d.low],
+        ["More players", d.high],
+      ]
+        .map(
+          ([t, v]) =>
+            `<details class="accordion"><summary>${t}</summary><p>${esc(v)}</p></details>`,
+        )
+        .join("")}</section></div></div>`
+    );
+  }
+  function remaining(l = state.live) {
+    return l.running
+      ? Math.max(0, (l.deadline - Date.now()) / 1000)
+      : l.remaining;
+  }
+  function settleLive() {
+    const l = state.live;
+    if (!l) return;
+    if (l.running && remaining(l) <= 0) {
+      l.running = false;
+      l.remaining = 0;
+      save();
+      if (route === "live") render();
+    }
+  }
+  function live() {
+    const l = state.live;
+    if (!l)
+      return `<div class="empty"><h1>Pick a practice to begin.</h1>${go("Browse practices", "practices", "primary")}</div>`;
+    const p = PRACTICES[l.practice - 1],
+      a = p.activities[l.index],
+      d = DRILLS[a.drill];
+    return `<div class="live"><div class="row"><div class="eyebrow">PRACTICE ${p.id} · ${esc(p.title)}</div>${go("Exit live", "today")}</div><div class="progress" aria-label="Activity ${l.index + 1} of 6">${p.activities.map((a, i) => `<span class="${i < l.index ? "done" : i === l.index ? "current" : ""}"></span>`).join("")}</div>${l.water ? `<section class="card water"><div class="eyebrow">WATER BREAK · ACTIVITY PAUSED</div><h1>Drink. Shade. Check in.</h1><div class="timer" id="water-clock">${fmt((l.water.end - Date.now()) / 1000)}</div><p>The break ends when you choose. Check everyone is ready.</p>${btn("Resume activity", "waterEnd", "primary wide")}</section>` : `<div class="row"><h1 class="live-title">${esc(d.name)}</h1>${pill(l.index + 1 + " / 6", "green")}</div><div class="timer-box"><div class="timer" id="practice-clock">${fmt(remaining())}</div><p id="practice-status" class="muted">${l.running ? "Activity running" : remaining() === 0 ? "Time is up — choose Next when ready" : "Paused"}</p><span class="small muted">Plan remaining <strong id="plan-clock">${fmt(planRemaining())}</strong> · extra breaks extend the session</span></div><div class="controls">${btn("Previous", "previous", "", l.index === 0 ? "disabled" : "")}${btn(l.running ? "Pause" : "Resume", "pause", "primary")}${btn(l.index === 5 ? "Finish" : "Next", "next")}</div><div class="controls space">${btn("+1 min", "addMinute")}${btn("Water", "water", "water")}${btn("Skip", "skip")}</div>${hotNotice()}<div class="live-grid space"><section class="card">${state.coach === "assistant" ? roleCard(d) : `<div class="eyebrow">HEAD COACH CUES</div><p class="cue">${d.cues.map(esc).join("<br>")}</p>`}<p class="small space"><strong>Equipment:</strong> ${esc(d.equipment)}</p>${a.note ? `<p class="small">${esc(a.note)}</p>` : ""}<p class="small">${esc(state.coach === "assistant" ? d.setup : d.play[0])}</p>${btn("Full activity instructions", "liveDetail", "wide")}</section><section class="card">${pitch(d.kind, d.name + " live setup", null, d.id)}<p class="small muted space">${esc(d.grid)}</p>${state.coach === "assistant" ? `<p class="small"><strong>Head coach:</strong> ${esc(d.cues[0])}</p>` : roleCard(d)}</section></div><p class="small muted space">NEXT: ${l.index < 5 ? esc(DRILLS[p.activities[l.index + 1].drill].name) : "Celebrate effort. Practice complete."}</p>`}</div>`;
+  }
+  function planRemaining() {
+    const l = state.live;
+    return (
+      remaining() +
+      PRACTICES[l.practice - 1].activities
+        .slice(l.index + 1)
+        .reduce((sum, a) => sum + a.minutes * 60, 0)
+    );
+  }
+  function startPractice(id) {
+    if (state.live) {
+      confirmDialog(
+        "Replace the saved practice?",
+        "Your current practice progress will be replaced. Completed practices stay saved.",
+        () => initPractice(id),
+      );
+      return;
+    }
+    initPractice(id);
+  }
+  function initPractice(id) {
+    if (state.game.running) {
+      toast("Pause the game clock before starting practice.");
+      return;
+    }
+    const p = PRACTICES[id - 1];
+    state.currentPractice = id;
+    state.live = {
+      practice: id,
+      index: 0,
+      running: true,
+      remaining: p.activities[0].minutes * 60,
+      deadline: Date.now() + p.activities[0].minutes * 60000,
+      water: null,
+    };
+    save();
+    navigate("live");
+  }
+  function stepPractice(dir) {
+    const l = state.live;
+    if (!l || l.water) return;
+    if (l.index + dir > 5) {
+      confirmDialog(
+        "Finish this practice?",
+        "Mark the practice complete and clear the live timer.",
+        () => {
+          if (!state.completed.includes(l.practice))
+            state.completed.push(l.practice);
+          state.currentPractice = Math.min(12, l.practice + 1);
+          state.live = null;
+          save();
+          navigate("today");
+          toast("Practice complete. Great work, coach.");
+        },
+      );
+      return;
+    }
+    l.index = Math.max(0, l.index + dir);
+    l.remaining = PRACTICES[l.practice - 1].activities[l.index].minutes * 60;
+    l.deadline = Date.now() + l.remaining * 1000;
+    l.running = true;
+    save();
+    render();
+  }
+  function gameConfig() {
+    const n = Number(state.rules.players),
+      duration = Number(state.rules.duration),
+      periods = Number(state.rules.periods);
+    return {
+      n,
+      duration,
+      periods,
+      valid:
+        Number.isInteger(n) &&
+        n >= 1 &&
+        n <= 11 &&
+        duration > 0 &&
+        duration <= 180 &&
+        [2, 4].includes(periods) &&
+        ["Yes", "No"].includes(state.rules.goalkeeper),
+    };
+  }
+  function syncGame() {
+    const g = state.game;
+    if (!g.running) return;
+    const cfg = gameConfig();
+    if (!cfg.valid) {
+      g.running = false;
+      save();
+      return;
+    }
+    const now = Date.now(),
+      delta = Math.min(
+        Math.max(0, (now - g.last) / 1000),
+        Math.max(0, (cfg.duration * 60) / cfg.periods - g.elapsed),
+      );
+    g.elapsed += delta;
+    g.last = now;
+    g.field.forEach((id) => {
+      const s =
+        g.stats[id] ||
+        (g.stats[id] = { seconds: 0, periods: [], positions: [] });
+      s.seconds += delta;
+      if (delta > 0 && !s.periods.includes(g.period)) s.periods.push(g.period);
+      const role = g.roles[id];
+      if (delta > 0 && role && !s.positions.includes(role))
+        s.positions.push(role);
+    });
+    if (g.elapsed >= (cfg.duration * 60) / cfg.periods) {
+      g.running = false;
+      save();
+      if (route === "game") render();
+    }
+  }
+  function playerName(p) {
+    return p.name + (p.initial ? " " + p.initial + "." : "");
+  }
+  function roles() {
+    const c = gameConfig();
+    if (c.n === 4 && state.rules.goalkeeper === "No")
+      return ["Front", "Left", "Right", "Back"];
+    return state.rules.goalkeeper === "Yes"
+      ? ["Goalkeeper", "Field"]
+      : ["Field"];
+  }
+  function playerRow(p, mode = "game") {
+    const g = state.game,
+      s = g.stats[p.id] || { seconds: 0, periods: [], positions: [] },
+      on = g.field.includes(p.id);
+    return `<div class="player"><span class="jersey">${esc(p.number || "—")}</span><div class="player-info"><strong>${esc(playerName(p))}</strong><small>${mode === "team" ? (p.present ? "Present today" : "Absent today") : `${on ? "On field" : p.present ? "Resting" : "Absent"} · ${s.periods.length} periods played`}</small>${mode === "game" && s.positions.length ? `<small>Tried: ${s.positions.map(esc).join(", ")}</small>` : ""}</div>${
+      mode === "team"
+        ? `<div class="player-actions">${btn(p.present ? "Present" : "Absent", "attendance", "", `data-id="${p.id}" aria-pressed="${p.present}"`)}${btn("Edit", "editPlayer", "", `data-id="${p.id}"`)}</div>`
+        : `<div class="time" data-playtime="${p.id}">${fmt(s.seconds)}</div><div class="player-actions">${
+            on
+              ? `<select aria-label="Position for ${esc(playerName(p))}" data-role="${p.id}">${roles()
+                  .map(
+                    (r) =>
+                      `<option ${g.roles[p.id] === r ? "selected" : ""}>${r}</option>`,
+                  )
+                  .join(
+                    "",
+                  )}</select>${btn("Rest", "rest", "", `data-id="${p.id}"`)}`
+              : p.present
+                ? btn(
+                    g.field.length < gameConfig().n ? "Put in" : "Sub in",
+                    "putIn",
+                    "",
+                    `data-id="${p.id}"`,
+                  )
+                : ""
+          }</div>`
+    }</div>`;
+  }
+  function game() {
+    syncGame();
+    const cfg = gameConfig(),
+      g = state.game;
+    const tabs = [
+      "arrival",
+      "warm-up",
+      "lineup",
+      "rotations",
+      "coaching",
+      "halftime",
+      "postgame",
+    ];
+    let body = "";
+    if (gameTab === "arrival")
+      body = `<div class="grid"><section class="card"><div class="row"><h2>Before players arrive</h2>${btn("Reset", "resetChecks", "link", 'data-key="arrival"')}</div>${checkList(CUES.arrival, "arrival")}</section><div class="stack"><section class="card"><div class="eyebrow">${state.coach === "assistant" ? "YOUR JOB · ASSISTANT" : "YOUR JOB · HEAD COACH"}</div><h2>${state.coach === "assistant" ? "Keep the sideline ready." : "Watch the game. Encourage."}</h2><p>${state.coach === "assistant" ? "Check attendance, prepare rotations, manage water, and get the next players ready." : "Observe decisions, give occasional short cues, and handle the referee and halftime message."}</p>${go("Check attendance", "team", "wide")}</section><section class="card"><h3>Game details</h3><p>${esc(state.nextGame.opponent || "Opponent not entered")}<br>${esc(state.nextGame.date ? formatDate(state.nextGame.date) : "Date not entered")} ${esc(state.nextGame.time)}<br>${esc(state.nextGame.location || "Location not entered")}</p>${btn("Edit game details", "editGame")}</section></div></div>`;
+    if (gameTab === "warm-up")
+      body = `<div class="grid"><section class="card"><h2>20 minutes to kickoff</h2><ol class="timeline">${[
+        ["20–15", "Ball each", "Dribble, turn, and explore. No lines."],
+        [
+          "15–10",
+          "Familiar dribbling game",
+          "Use Red Light / Green Light or Gates.",
+        ],
+        [
+          "10–5",
+          "1v1 or short shooting",
+          "Many balls, short rounds, quick turns.",
+        ],
+        [
+          "5–0",
+          "Water + team talk",
+          "Find space. Go toward goal. Win it back.",
+        ],
+      ]
+        .map(
+          ([n, t, d]) =>
+            `<li><div class="row"><strong>${n} min</strong><span class="tag">BEFORE KICKOFF</span></div><h3 class="space">${t}</h3><p class="muted">${d}</p></li>`,
+        )
+        .join(
+          "",
+        )}</ol></section><section class="card"><div class="row"><h2>Our huddle</h2>${btn("Edit", "editHuddle", "link")}</div><p class="cue">${esc(state.huddle)}</p><p class="muted">A few words, then let them play.</p></section></div>`;
+    if (["lineup", "rotations"].includes(gameTab)) {
+      const present = state.roster.filter((p) => p.present),
+        on = state.roster.filter((p) => g.field.includes(p.id)),
+        rest = present
+          .filter((p) => !g.field.includes(p.id))
+          .sort(
+            (a, b) =>
+              (g.stats[a.id]?.seconds || 0) - (g.stats[b.id]?.seconds || 0),
+          );
+      body = `${!cfg.valid ? `<div class="notice">Confirm players per side, goalkeeper, total minutes, and halves/quarters before using the game clock. ${go("League setup", "league")}</div>` : ""}<section class="card"><div class="row wrap"><div><div class="eyebrow">${g.finished ? "GAME FINISHED" : `${cfg.periods === 4 ? "QUARTER" : "PERIOD"} ${g.period}${cfg.valid ? " / " + cfg.periods : ""}`}</div><div class="stat" id="game-clock">${fmt(g.elapsed)}</div><span class="small muted">${g.running ? "Playing time is counting" : g.finished ? "Final approximate playing time" : "Clock paused"}${cfg.valid ? " · " + cfg.duration / cfg.periods + " min per period" : ""}</span></div><div class="gap">${btn(g.running ? "Pause game" : g.finished ? "Game finished" : "Start / resume", "gameClock", "primary", !cfg.valid || g.finished ? "disabled" : "")}${btn(cfg.valid && g.period >= cfg.periods ? "Finish game" : "Next period", "nextPeriod", "", !cfg.valid || g.finished ? "disabled" : "")}${btn("New game", "newGame")}</div></div><p class="summary-line space">Substitutions: ${rule("subs")}<br>Minimum playing requirement: ${rule("minimum")}</p><p class="small muted">Clock continues when the phone locks. Pause at stoppages and period ends. Times are approximate.</p></section><div class="grid space"><section class="card"><div class="row"><h2>On field</h2>${pill(on.length + " / " + (cfg.valid ? cfg.n : "?"), "green")}</div>${on.length ? on.map((p) => playerRow(p)).join("") : '<p class="muted">Choose present players below to build your lineup.</p>'}${cfg.n === 4 && state.rules.goalkeeper === "No" ? `<details class="accordion space"><summary>The 1–2–1 diamond</summary>${pitch("diamond", "Four-player diamond: front, left, right, back")}${legend}<p>Width, depth, and height. Everyone attacks and defends. Rotate roles; this is a teaching tool, not a fixed formation.</p></details>` : ""}</section><section class="card"><div class="row"><h2>Next in / resting</h2>${btn("Suggest rotation", "suggest", "", !cfg.valid || !rest.length ? "disabled" : "")}</div><p class="small muted">Least playing time first. Every substitution needs your choice.</p>${rest.length ? rest.map((p) => playerRow(p)).join("") : '<p class="muted">No resting players. Add your roster and check attendance.</p>'}${go("Manage team", "team", "space")}</section></div>`;
+      if (!present.length)
+        body += `<section class="card empty space"><h2>Build your team first.</h2><p>Add first names and jersey numbers on this device.</p>${go("Add players", "team", "primary")}</section>`;
+    }
+    if (gameTab === "coaching")
+      body = `<div class="grid"><section class="card"><h2>Watch the decisions.</h2><h3>Attacking</h3>${list(["Looks up and finds open space", "Tries to go forward or beat a player", "Recognizes an open teammate", "Teammates offer space instead of crowding"])}<h3>Defending</h3>${list(["Nearest player slows the ball carrier", "Teammates recover toward their own goal", "Everyone tries to win it back and help"])}<h3>Development</h3><p>Bravery, both feet, new ideas, recovery after mistakes, effort, and teamwork.</p></section><div class="stack"><section class="card"><h2>One voice at a time.</h2><p><strong>Head:</strong> watch play, encourage, speak to referee when needed, lead halftime.</p><p><strong>Assistant:</strong> substitutions, time, next players, water, and engaged resting players.</p><p class="muted">Avoid competing tactical instructions.</p></section><section class="card"><h3>Give a cue, then space.</h3>${list(CUES.general)}<p class="muted">Avoid constant “PASS!”, “SHOOT!”, “GO LEFT!”, or “NO!”</p></section></div></div>`;
+    if (gameTab === "halftime")
+      body = `<section class="card"><div class="eyebrow">WATER FIRST · THREE SHORT POINTS</div><ol class="timeline"><li><h2>01 / Praise one thing</h2><p>“I love how we’re trying to dribble forward.”</p></li><li><h2>02 / Fix one thing</h2><p>“When they have the ball, get between them and our goal.”</p></li><li><h2>03 / Give one challenge</h2><p>“Let’s see if everyone can try to beat a player.”</p></li></ol></section>`;
+    if (gameTab === "postgame")
+      body = `<div class="grid"><section class="card"><div class="eyebrow">60–90 SECOND HUDDLE</div><h2>Finish positive.</h2><h3>Celebrate</h3><p>Name something the team did well.</p><h3>Effort</h3><p>Praise bravery, persistence, or teamwork.</p><h3>Next step</h3><p>Connect one thing to ${esc(PRACTICES[state.currentPractice - 1].title)}.</p>${g.running ? btn("Pause the game clock", "gameClock", "primary") : ""}</section><section class="card"><h2>Playing-time check</h2><p class="small muted">Approximate minutes from this game. Lowest first.</p>${
+        [...state.roster]
+          .sort(
+            (a, b) =>
+              (g.stats[a.id]?.seconds || 0) - (g.stats[b.id]?.seconds || 0),
+          )
+          .map(
+            (p) =>
+              `<div class="row space"><strong>${esc(playerName(p))}</strong><span data-playtime="${p.id}">${fmt(g.stats[p.id]?.seconds || 0)}</span></div>`,
+          )
+          .join("") || '<p class="muted">No roster yet.</p>'
+      }<p class="space small">Minimum requirement: ${rule("minimum")}</p></section></div>`;
+    return (
+      heading(
+        "THE SIDELINE",
+        "Game day. One step at a time.",
+        "Simple jobs. Balanced opportunities.",
+      ) +
+      hotNotice() +
+      `<div class="subnav" role="tablist" aria-label="Game day stages">${tabs.map((t) => `<button role="tab" aria-selected="${gameTab === t}" class="${gameTab === t ? "active" : ""}" data-game-tab="${t}">${t.replace(/^./, (c) => c.toUpperCase())}</button>`).join("")}</div><section role="tabpanel" aria-label="${gameTab}">${body}</section>`
+    );
+  }
+  function team() {
+    return (
+      heading(
+        "YOUR PLAYERS",
+        "Everyone gets a turn.",
+        "First names only. Your roster stays on this device.",
+        btn("Add player", "addPlayer", "primary"),
+      ) +
+      `<div class="grid"><section class="card"><div class="row"><h2>Team roster</h2>${pill(state.roster.filter((p) => p.present).length + " PRESENT", "green")}</div>${state.roster.length ? state.roster.map((p) => playerRow(p, "team")).join("") : `<div class="empty"><h2>Ready for your first player.</h2><p>Add a first name and jersey number. No account needed.</p>${btn("Add player", "addPlayer", "primary")}</div>`}</section><aside class="stack"><section class="card"><h2>Equal chances to grow.</h2><p>Check who is here before kickoff. Use Game Day to build a lineup and see who has played less.</p><p>Rotate roles. Let everyone attack, defend, and try something new.</p>${btn("Open rotations", "openRotations", "wide")}</section><section class="card"><h3>Two coaches, separate devices</h3><p class="muted">This version does not sync rosters, settings, or clocks. Pick one device to track official sideline rotations.</p></section></aside></div>`
+    );
+  }
+  function rules() {
+    return (
+      heading(
+        "KNOW THE LOCAL GAME",
+        "Clear rules. Confident coaches.",
+        "Our League controls your game-day guidance.",
+        go("League setup", "league"),
+      ) +
+      `<div class="subnav">${btn("Our League", "ours", rulesTab === "ours" ? "primary" : "")}${btn("Reference only", "reference", rulesTab === "reference" ? "primary" : "")}</div>${
+        rulesTab === "ours"
+          ? `<section class="card"><h2>${esc(state.rules.name || "Set up your league")}</h2><p class="muted">Only enter rules confirmed by your league. Blank means unconfirmed.</p><dl class="rules-list">${RULE_FIELDS.filter(
+              (f) => f[0] !== "name",
+            )
+              .map(
+                ([k, t]) =>
+                  `<div><dt>${t}</dt><dd>${k === "periods" && state.rules[k] ? (state.rules[k] === "2" ? "Halves" : "Quarters") : rule(k)}</dd></div>`,
+              )
+              .join("")}</dl></section>`
+          : `<div class="notice">REFERENCE ONLY • Your local league rules may differ. Our League controls what coaches follow. These values are never copied into your settings automatically.</div><div class="grid"><section class="card"><h2>Common AYSO 8U reference</h2><dl class="rules-list">${Object.entries(
+              REFERENCE,
+            )
+              .map(
+                ([k, v]) => `<div><dt>${esc(k)}</dt><dd>${esc(v)}</dd></div>`,
+              )
+              .join(
+                "",
+              )}</dl><p class="small space">Based on <a href="https://wiki.ayso.org/wiki/8U_Official" target="_blank" rel="noopener">AYSO 8U guidance</a>. Reviewed September 25, 2026. Not a substitute for your league’s current rules.</p></section><section class="card"><h2>A simple 4v4 shape</h2>${pitch("diamond", "Reference 1–2–1 diamond")}${legend}<p>One gives depth, two give width, one gives height. All four attack and defend. Rotate roles.</p><p class="muted">Applies to four field players without a goalkeeper. Do not force children to hold exact spots.</p></section></div>`
+      }`
+    );
+  }
+  function league() {
+    return (
+      heading(
+        "LEAGUE SETUP",
+        "Your rules, confirmed.",
+        "Leave anything unknown blank. It will say “Confirm with league”.",
+        go("Back", "rules"),
+      ) +
+      `<form id="league-form" class="card"><div class="form-grid">${RULE_FIELDS.map(([k, t, type]) => `<label class="field">${t}${type === "yesno" ? `<select name="${k}"><option value="">Confirm with league</option>${["Yes", "No"].map((v) => `<option ${state.rules[k] === v ? "selected" : ""}>${v}</option>`).join("")}</select>` : type === "periods" ? `<select name="${k}"><option value="">Confirm with league</option><option value="2" ${state.rules[k] === "2" ? "selected" : ""}>Halves (2)</option><option value="4" ${state.rules[k] === "4" ? "selected" : ""}>Quarters (4)</option></select>` : `<input name="${k}" type="${type}" value="${esc(state.rules[k] || "")}" ${type === "number" ? `min="1" max="${k === "players" ? 11 : 180}" step="1"` : 'maxlength="300"'} placeholder="Confirm with league">`}</label>`).join("")}</div><div class="notice">Do not teach heading for this age group. If entered league guidance conflicts with safety guidance, clarify with your league before play.</div><button class="primary" type="submit">Save league rules</button></form>`
+    );
+  }
+  function safety() {
+    return (
+      heading(
+        "ALWAYS WITHIN REACH",
+        "Safety comes first.",
+        "Coaching reminders, not medical diagnosis.",
+        go("Back to today", "today"),
+      ) +
+      `<div class="grid"><section class="card"><div class="eyebrow">HEAD INJURY</div><h2>No heading for this age group.</h2><p>If a concussion is suspected, stop participation immediately, notify the parent or guardian, and follow league procedure.</p><div class="notice danger">Keep the player out for the rest of the day and until cleared by a healthcare professional. Never ask them to play through it.</div><p>Emergency signs such as repeated vomiting, seizures, worsening headache, or trouble staying awake need emergency care. Call 911 for an emergency.</p><a href="https://www.cdc.gov/heads-up/response/index.html" target="_blank" rel="noopener">CDC HEADS UP guidance ↗</a></section><section class="card"><div class="eyebrow">HEAT & HYDRATION</div><h2>Check the players, not just the clock.</h2><p>Consider heat, sun, air quality, fatigue, and behavior. Offer extra water and shade; use shorter rounds. Follow league weather policy.</p><p>Stop activity if a child seems unwell. Get urgent help for collapse, confusion, or other emergency signs.</p><label class="switch"><input id="hot" type="checkbox" ${state.hot ? "checked" : ""}><strong>Hot day mode</strong></label><p class="small muted space">This toggle does not decide whether conditions are safe to play.</p><a href="https://www.ussoccer.com/soccer-forward/resource-hub/managing-extreme-weather-conditions" target="_blank" rel="noopener">U.S. Soccer weather resources ↗</a></section><section class="card full"><h2>Field & equipment</h2>${list(["Secure goals; never allow climbing.", "Check holes, debris, and unsafe surfaces.", "Shin guards with socks covering them; appropriate shoes.", "Remove prohibited jewelry and unsafe equipment per league rules.", "Check ball inflation and keep first aid, water, and emergency contacts accessible to the responsible adult."])}</section></div>`
+    );
+  }
+  function toolsPage() {
+    return (
+      heading(
+        "COACH TOOLS",
+        "Less talking. More playing.",
+        "Short cues and a ready equipment bag.",
+      ) +
+      `<div class="grid"><section class="card"><div class="row"><h2>Equipment</h2>${btn("Reset", "resetChecks", "link", 'data-key="equipment"')}</div>${checkList(CUES.equipment, "equipment")}</section><section class="card"><h2>Quick coaching phrases</h2><h3>Attack</h3>${list(CUES.attack)}<h3>Defend</h3>${list(CUES.defend)}<h3>Encourage</h3>${list(CUES.general)}</section><section class="card full"><h2>How we coach</h2><p>Fun, lots of touches, both feet, short instructions, small games, and choices. No laps, long lines, long lectures, or elimination that leaves children sitting out.</p><p class="muted">The season and activity plans are original coaching adaptations of the handoff. They are not official AYSO or U.S. Soccer session plans.</p><details class="accordion"><summary>Research & source links</summary>${SOURCES.map(([t, url]) => `<p><a href="${url}" target="_blank" rel="noopener">${t} ↗</a></p>`).join("")}<p class="small muted">Source review: September 25, 2026. Linked resources require internet access.</p></details></section></div>`
+    );
+  }
+  function settings() {
+    return (
+      heading(
+        "MAKE IT YOURS",
+        "Ready for your sideline.",
+        "Saved on this device. No account or cloud sync.",
+      ) +
+      `<div class="grid"><section class="card"><h2>Your coaching role</h2><label class="field">Emphasize my responsibilities<select id="coach"><option value="head" ${state.coach === "head" ? "selected" : ""}>Head coach</option><option value="assistant" ${state.coach === "assistant" ? "selected" : ""}>Assistant coach</option></select></label><p class="muted space">Assistant mode puts setup, equipment, and player organization first in live practice.</p><label class="switch"><input id="hot" type="checkbox" ${state.hot ? "checked" : ""}><strong>Hot day mode</strong></label></section><section class="card"><h2>On your iPhone</h2><p>Open the hosted app in Safari. Tap Share, then Add to Home Screen and Open as Web App if shown.</p><p>Load it once online and wait for offline readiness below before going to the field.</p><p id="offline-status" class="notice green">${offlineText()}</p><p class="small muted">The single-file download opens without hosting; Home Screen installation and service-worker caching require the hosted version. Private browsing or clearing website data can remove saved rosters.</p></section><section class="card"><h2>League & game</h2><div class="gap">${go("League rules setup", "league")}${btn("Edit next game", "editGame")}${btn("Edit huddle", "editHuddle")}</div></section><section class="card"><h2>Your data</h2><p>Each device has a separate roster, timer, and settings. Share the app link; use one device to track game minutes.</p>${btn("Reset all local data", "resetAll", "danger")}<p class="small muted space">Reset is permanent after confirmation.</p></section></div>`
+    );
+  }
+  let offlineReady = false,
+    offlineError = "";
+  function offlineText() {
+    return window.SINGLE_FILE || location.protocol === "file:"
+      ? "Single-file mode • content is included in this file."
+      : offlineReady
+        ? "Offline ready • core content saved on this device."
+        : offlineError || "Preparing offline content…";
+  }
+  function navigate(path) {
+    if (location.hash.slice(1) === path) {
+      render();
+      return;
+    }
+    location.hash = path;
+  }
+  function render() {
+    const parts = (location.hash.slice(1) || "today").split("/");
+    route = parts[0];
+    document.body.classList.toggle("live-mode", route === "live");
+    const views = {
+      today,
+      practices,
+      practice: () => practice(Number(parts[1])),
+      drill: () => drillDetail(Number(parts[1]), Number(parts[2])),
+      live,
+      game,
+      team,
+      rules,
+      league,
+      safety,
+      tools: toolsPage,
+      settings,
+    };
+    $("#main").innerHTML = (views[route] || today)();
+    nav();
+    const selectedTab = $('[data-game-tab][aria-selected="true"]');
+    if (selectedTab) selectedTab.parentElement.scrollLeft = Math.max(0, selectedTab.offsetLeft - selectedTab.parentElement.offsetLeft - 80);
+  }
+  function openDialog(html) {
+    dialogReturn = document.activeElement;
+    $("#dialog").innerHTML =
+      `<button class="dialog-close quiet" data-action="closeDialog" aria-label="Close dialog">✕</button>${html}`;
+    $("#dialog").showModal();
+  }
+  function closeDialog() {
+    $("#dialog").close();
+    if (dialogReturn?.isConnected) dialogReturn.focus();
+  }
+  let confirmAction = null;
+  function confirmDialog(title, message, fn) {
+    confirmAction = fn;
+    openDialog(
+      `<h2>${esc(title)}</h2><p>${esc(message)}</p><div class="gap space">${btn("Cancel", "closeDialog")}${btn("Confirm", "confirm", "primary")}</div>`,
+    );
+  }
+  function playerForm(id = null) {
+    editingId = id;
+    const p = state.roster.find((p) => p.id === id) || {
+      name: "",
+      number: "",
+      initial: "",
+    };
+    openDialog(
+      `<h2>${id ? "Edit player" : "Add a player"}</h2><form id="player-form"><div class="form-grid"><label class="field">First name<input name="name" value="${esc(p.name)}" required maxlength="30" autocomplete="off"></label><label class="field">Jersey number<input name="number" inputmode="numeric" pattern="[0-9]{0,3}" value="${esc(p.number)}" maxlength="3"></label><label class="field">Last initial (optional)<input name="initial" value="${esc(p.initial)}" maxlength="1" autocomplete="off"></label></div><div class="gap space"><button type="submit" class="primary">Save player</button>${id ? btn("Remove player", "deletePlayer", "danger", `data-id="${id}"`) : ""}</div></form>`,
+    );
+  }
+  function swapPlayer(inId, outId) {
+    syncGame();
+    const g = state.game,
+      player = state.roster.find((p) => p.id === inId);
+    if (!player?.present || g.field.includes(inId)) return;
+    if (outId) {
+      g.field = g.field.filter((id) => id !== outId);
+      const r = g.roles[outId];
+      delete g.roles[outId];
+      g.roles[inId] = r || roles()[0];
+    }
+    if (g.field.length >= gameConfig().n) {
+      toast("Field is full. Choose a player to replace.");
+      return;
+    }
+    g.field.push(inId);
+    if (!g.roles[inId])
+      g.roles[inId] =
+        roles().find((r) => !Object.values(g.roles).includes(r)) || roles()[0];
+    save();
+    render();
+  }
+  function putIn(id) {
+    const cfg = gameConfig();
+    if (!cfg.valid) {
+      toast("Confirm your league format first.");
+      return;
+    }
+    const g = state.game;
+    if (g.finished) {
+      toast("Start a new game to change the lineup.");
+      return;
+    }
+    if (g.field.length < cfg.n) {
+      swapPlayer(id);
+      return;
+    }
+    openDialog(
+      `<h2>Who comes off?</h2><p>Replace one player with ${esc(playerName(state.roster.find((p) => p.id === id)))}. Use an allowed substitution opportunity.</p><p class="small">Procedure: ${rule("subs")}</p><div class="stack">${g.field.map((out) => btn("Replace " + esc(playerName(state.roster.find((p) => p.id === out))), "swap", "", `data-in="${id}" data-out="${out}"`)).join("")}</div>`,
+    );
+  }
+  function suggest() {
+    syncGame();
+    const g = state.game,
+      bench = state.roster
+        .filter((p) => p.present && !g.field.includes(p.id))
+        .sort(
+          (a, b) =>
+            (g.stats[a.id]?.seconds || 0) - (g.stats[b.id]?.seconds || 0),
+        );
+    if (!bench.length) {
+      toast("No resting players.");
+      return;
+    }
+    if (g.finished) {
+      toast("Game is finished.");
+      return;
+    }
+    const incoming = bench[0],
+      outgoing = [...g.field].sort(
+        (a, b) => (g.stats[b]?.seconds || 0) - (g.stats[a]?.seconds || 0),
+      )[0];
+    if (g.field.length < gameConfig().n) {
+      openDialog(
+        `<h2>Fill an open spot</h2><p>${esc(playerName(incoming))} has ${fmt(g.stats[incoming.id]?.seconds || 0)} playing time.</p>${btn("Confirm player in", "swap", "primary", `data-in="${incoming.id}"`)}`,
+      );
+      return;
+    }
+    const out = state.roster.find((p) => p.id === outgoing);
+    openDialog(
+      `<h2>Suggested next rotation</h2><p><strong>IN:</strong> ${esc(playerName(incoming))} · ${fmt(g.stats[incoming.id]?.seconds || 0)}</p><p><strong>REST:</strong> ${esc(playerName(out))} · ${fmt(g.stats[outgoing]?.seconds || 0)}</p><p>Least time in, most time resting next. Check the situation and your league’s substitution procedure.</p><p class="small">${rule("subs")}</p>${btn("Confirm substitution", "swap", "primary", `data-in="${incoming.id}" data-out="${outgoing}"`)}`,
+    );
+  }
+  function handleAction(el) {
+    const a = el.dataset.action,
+      l = state.live,
+      id = el.dataset.id;
+    const actions = {
+      closeDialog,
+      confirm: () => {
+        closeDialog();
+        const f = confirmAction;
+        confirmAction = null;
+        f?.();
+      },
+      setNext: () => {
+        state.currentPractice = Number(id);
+        save();
+        toast("Next practice updated.");
+      },
+      toggleComplete: () => {
+        const n = Number(id);
+        state.completed = state.completed.includes(n)
+          ? state.completed.filter((x) => x !== n)
+          : [...state.completed, n];
+        save();
+        render();
+      },
+      startPractice: () => startPractice(Number(id)),
+      resumeLive: () => navigate("live"),
+      pause: () => {
+        if (!l || l.water) return;
+        l.remaining = remaining();
+        l.running = !l.running;
+        if (l.running) {
+          if (l.remaining <= 0) l.remaining = 60;
+          l.deadline = Date.now() + l.remaining * 1000;
+        }
+        save();
+        render();
+      },
+      previous: () => stepPractice(-1),
+      next: () => stepPractice(1),
+      skip: () => stepPractice(1),
+      addMinute: () => {
+        if (!l || l.water) return;
+        l.remaining = remaining() + 60;
+        if (l.running) l.deadline = Date.now() + l.remaining * 1000;
+        save();
+        render();
+      },
+      water: () => {
+        if (!l) return;
+        l.remaining = remaining();
+        l.water = { end: Date.now() + 60000, resume: l.running };
+        l.running = false;
+        save();
+        render();
+      },
+      waterEnd: () => {
+        if (!l?.water) return;
+        l.running = l.water.resume && l.remaining > 0;
+        l.water = null;
+        l.deadline = Date.now() + l.remaining * 1000;
+        save();
+        render();
+      },
+      liveDetail: () => {
+        const p = PRACTICES[l.practice - 1],
+          a = p.activities[l.index],
+          d = DRILLS[a.drill];
+        openDialog(
+          `<h2>${esc(d.name)}</h2><p><strong>Setup:</strong> ${esc(d.setup)}</p><ol>${d.play.map((s) => `<li>${esc(s)}</li>`).join("")}</ol>${a.note ? `<p>${esc(a.note)}</p>` : ""}${d.kind === "restart" ? restartRules() : ""}${roleCard(d)}<p class="space"><strong>Easier:</strong> ${esc(d.easier)}</p><p><strong>Harder:</strong> ${esc(d.harder)}</p><p><strong>Fewer:</strong> ${esc(d.low)}</p><p><strong>More:</strong> ${esc(d.high)}</p><p class="small muted">Practice clock keeps its current state while instructions are open.</p>`,
+        );
+      },
+      resetChecks: () => {
+        Object.keys(state.checks)
+          .filter((k) => k.startsWith(el.dataset.key + "-"))
+          .forEach((k) => delete state.checks[k]);
+        save();
+        render();
+      },
+      addPlayer: () => playerForm(),
+      editPlayer: () => playerForm(id),
+      deletePlayer: () => {
+        closeDialog();
+        confirmDialog(
+          "Remove this player?",
+          "Their local playing-time record will also be deleted.",
+          () => {
+            syncGame();
+            state.game.field = state.game.field.filter((x) => x !== id);
+            delete state.game.stats[id];
+            delete state.game.roles[id];
+            state.roster = state.roster.filter((p) => p.id !== id);
+            save();
+            render();
+          },
+        );
+      },
+      attendance: () => {
+        syncGame();
+        const p = state.roster.find((p) => p.id === id);
+        p.present = !p.present;
+        if (!p.present) {
+          state.game.field = state.game.field.filter((x) => x !== id);
+          delete state.game.roles[id];
+        }
+        save();
+        render();
+      },
+      openRotations: () => {
+        gameTab = "rotations";
+        state.gameTab = gameTab;
+        save();
+        navigate("game");
+      },
+      putIn: () => putIn(id),
+      rest: () => {
+        syncGame();
+        state.game.field = state.game.field.filter((x) => x !== id);
+        delete state.game.roles[id];
+        save();
+        render();
+      },
+      swap: () => {
+        closeDialog();
+        swapPlayer(el.dataset.in, el.dataset.out);
+      },
+      suggest,
+      gameClock: () => {
+        const g = state.game;
+        syncGame();
+        if (!g.running) {
+          if (state.live?.running) {
+            toast("Pause your practice timer first.");
+            return;
+          }
+          if (!gameConfig().valid || g.finished) return;
+          if (!g.field.length) {
+            toast("Choose an on-field lineup first.");
+            return;
+          }
+          if (
+            g.elapsed >=
+            (gameConfig().duration * 60) / gameConfig().periods
+          ) {
+            toast("Period is complete. Choose Next period or Finish game.");
+            return;
+          }
+        }
+        g.running = !g.running;
+        g.last = Date.now();
+        save();
+        render();
+      },
+      nextPeriod: () => {
+        syncGame();
+        const g = state.game,
+          last = g.period >= gameConfig().periods;
+        confirmDialog(
+          last ? "Finish this game?" : "Move to the next period?",
+          last
+            ? "Stop the clock and keep the final playing times."
+            : "The game clock pauses. Playing-time totals carry forward; the period clock resets.",
+          () => {
+            syncGame();
+            g.running = false;
+            if (last) g.finished = true;
+            else {
+              g.period++;
+              g.elapsed = 0;
+            }
+            save();
+            render();
+          },
+        );
+      },
+      newGame: () =>
+        confirmDialog(
+          "Start a new game?",
+          "Clear this game’s lineup and playing-time totals. Keep your roster and league settings.",
+          () => {
+            state.game = freshGame();
+            save();
+            render();
+          },
+        ),
+      ours: () => {
+        rulesTab = "ours";
+        render();
+      },
+      reference: () => {
+        rulesTab = "reference";
+        render();
+      },
+      editGame: () =>
+        openDialog(
+          `<h2>Next game</h2><form id="game-form"><div class="form-grid">${[
+            ["date", "Date", "date"],
+            ["time", "Time", "time"],
+            ["opponent", "Opponent", "text"],
+            ["location", "Location", "text"],
+          ]
+            .map(
+              ([k, t, type]) =>
+                `<label class="field">${t}<input type="${type}" name="${k}" value="${esc(state.nextGame[k])}" maxlength="120"></label>`,
+            )
+            .join(
+              "",
+            )}</div><button type="submit" class="primary space">Save game</button></form>`,
+        ),
+      editHuddle: () =>
+        openDialog(
+          `<h2>Pregame huddle</h2><form id="huddle-form"><label class="field">Keep it short and encouraging<textarea name="huddle" maxlength="1000" required>${esc(state.huddle)}</textarea></label><button type="submit" class="primary space">Save huddle</button></form>`,
+        ),
+      resetAll: () =>
+        confirmDialog(
+          "Reset all local data?",
+          "Permanently remove this device’s roster, rules, progress, and game minutes. This cannot be undone.",
+          () => {
+            state = defaults();
+            storageOK = true;
+            save();
+            $("#storage-warning").hidden = storageOK;
+            navigate("today");
+            toast("Local data reset.");
+          },
+        ),
+    };
+    actions[a]?.();
+  }
+  document.addEventListener("click", (e) => {
+    const el = e.target.closest("button");
+    if (!el) return;
+    if (el.dataset.go) {
+      if ($("#dialog").open) closeDialog();
+      navigate(el.dataset.go);
+    } else if (el.dataset.gameTab) {
+      gameTab = el.dataset.gameTab;
+      state.gameTab = gameTab;
+      save();
+      render();
+    } else if (el.dataset.action) handleAction(el);
+  });
+  document.addEventListener("change", (e) => {
+    const t = e.target;
+    if (t.dataset.check) {
+      state.checks[t.dataset.check] = t.checked;
+      save();
+    }
+    if (t.id === "hot") {
+      state.hot = t.checked;
+      save();
+      render();
+      toast(state.hot ? "Hot day reminders on." : "Hot day reminders off.");
+    }
+    if (t.id === "coach") {
+      state.coach = t.value;
+      save();
+      render();
+    }
+    if (t.dataset.role) {
+      syncGame();
+      state.game.roles[t.dataset.role] = t.value;
+      save();
+      render();
+    }
+  });
+  document.addEventListener("submit", (e) => {
+    e.preventDefault();
+    const f = e.target,
+      data = Object.fromEntries(new FormData(f));
+    if (f.id === "player-form") {
+      if (!data.name.trim()) {
+        toast("Enter a first name.");
+        return;
+      }
+      const p = {
+        name: data.name.trim(),
+        number: data.number.trim(),
+        initial: data.initial.trim().toUpperCase(),
+      };
+      if (editingId)
+        Object.assign(
+          state.roster.find((p) => p.id === editingId),
+          p,
+        );
+      else
+        state.roster.push({
+          ...p,
+          id:
+            "p" +
+            Date.now().toString(36) +
+            Math.random().toString(36).slice(2, 7),
+          present: true,
+        });
+      save();
+      closeDialog();
+      render();
+      toast("Player saved.");
+    }
+    if (f.id === "league-form") {
+      syncGame();
+      const changed = ["players", "goalkeeper", "duration", "periods"].some(
+        (k) => data[k] !== String(state.rules[k] || ""),
+      );
+      const commit = () => {
+        state.rules = data;
+        if (changed) state.game = freshGame();
+        save();
+        navigate("rules");
+        toast("League rules saved.");
+      };
+      if (
+        changed &&
+        (state.game.field.length || Object.keys(state.game.stats).length)
+      )
+        confirmDialog(
+          "Change the game format?",
+          "The current lineup and playing-time record must reset for the new format. Your roster stays saved.",
+          commit,
+        );
+      else commit();
+    }
+    if (f.id === "game-form") {
+      state.nextGame = data;
+      save();
+      closeDialog();
+      render();
+      toast("Game details saved.");
+    }
+    if (f.id === "huddle-form") {
+      state.huddle = data.huddle.trim();
+      save();
+      closeDialog();
+      render();
+      toast("Huddle saved.");
+    }
+  });
+  window.addEventListener("hashchange", () => {
+    render();
+    window.scrollTo(0, 0);
+    $("#main").focus({ preventScroll: true });
+  });
+  window.addEventListener("pagehide", () => {
+    syncGame();
+    save();
+  });
+  document.addEventListener("visibilitychange", () => {
+    syncGame();
+    settleLive();
+    save();
+    if (!document.hidden) render();
+  });
+  // Prevent two tabs from independently counting the same game. Reload changes from the other tab.
+  window.addEventListener("storage", (e) => {
+    if (e.key === KEY && e.newValue) {
+      try {
+        state = JSON.parse(e.newValue);
+        render();
+      } catch {
+        toast("Could not read changes from another tab.");
+      }
+    }
+  });
+  setInterval(() => {
+    settleLive();
+    syncGame();
+    const l = state.live;
+    if ($("#practice-clock") && l)
+      $("#practice-clock").textContent = fmt(remaining());
+    if ($("#plan-clock") && l)
+      $("#plan-clock").textContent = fmt(planRemaining());
+    if ($("#water-clock") && l?.water)
+      $("#water-clock").textContent = fmt((l.water.end - Date.now()) / 1000);
+    if ($("#game-clock"))
+      $("#game-clock").textContent = fmt(state.game.elapsed);
+    document
+      .querySelectorAll("[data-playtime]")
+      .forEach(
+        (el) =>
+          (el.textContent = fmt(
+            state.game.stats[el.dataset.playtime]?.seconds || 0,
+          )),
+      );
+    if (state.game.running) save();
+  }, 1000);
+  if (
+    !window.SINGLE_FILE &&
+    "serviceWorker" in navigator &&
+    ["https:", "http:"].includes(location.protocol)
+  ) {
+    navigator.serviceWorker
+      .register("./sw.js")
+      .then(() => navigator.serviceWorker.ready)
+      .then(async () => {
+        const reg = await navigator.serviceWorker.ready;
+        const channel = new MessageChannel();
+        channel.port1.onmessage = (e) => {
+          if (e.data === "CACHE_READY") {
+            offlineReady = true;
+            const el = $("#offline-status");
+            if (el) el.textContent = offlineText();
+          }
+        };
+        (reg.active || navigator.serviceWorker.controller)?.postMessage(
+          "CHECK_CACHE",
+          [channel.port2],
+        );
+      })
+      .catch(() => {
+        offlineError =
+          "Offline setup failed. Stay online and reload to try again.";
+        const el = $("#offline-status");
+        if (el) el.textContent = offlineText();
+      });
+  } else if (location.protocol !== "file:")
+    offlineError = "Offline caching is unavailable in this browser.";
+  settleLive();
+  syncGame();
+  render();
+})();
+
+</script>
+  </body>
+</html>
