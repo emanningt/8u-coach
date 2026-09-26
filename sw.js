@@ -1,4 +1,4 @@
-const CACHE = "8u-coach-v1.1.0";
+const CACHE = "8u-coach-v1.2.0";
 const CORE = [
   "./",
   "./index.html",
@@ -39,19 +39,26 @@ self.addEventListener("fetch", (event) => {
   if (event.request.method !== "GET" || url.origin !== self.location.origin)
     return;
   event.respondWith(
-    caches.match(event.request).then(
-      (cached) =>
-        cached ||
-        fetch(event.request).catch(async () => {
-          if (event.request.mode === "navigate")
-            return (
-              (await caches.match(
-                new URL("./index.html", self.location.href),
-              )) || Response.error()
-            );
-          return Response.error();
-        }),
-    ),
+    fetch(event.request)
+      .then((response) => {
+        if (response.ok) {
+          const copy = response.clone();
+          event.waitUntil(
+            caches.open(CACHE).then((cache) => cache.put(event.request, copy)),
+          );
+        }
+        return response;
+      })
+      .catch(async () => {
+        const cached = await caches.match(event.request);
+        if (cached) return cached;
+        if (event.request.mode === "navigate")
+          return (
+            (await caches.match(new URL("./index.html", self.location.href))) ||
+            Response.error()
+          );
+        return Response.error();
+      }),
   );
 });
 self.addEventListener("message", (event) => {
