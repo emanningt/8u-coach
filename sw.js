@@ -1,4 +1,4 @@
-const CACHE = "8u-coach-v1.3.0";
+const CACHE = "8u-coach-v1.4.0";
 const CORE = [
   "./",
   "./index.html",

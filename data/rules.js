@@ -24,13 +24,20 @@ window.RULE_FIELDS = [
   ["other", "Other local rules", "text"],
 ];
 window.REFERENCE = {
-  Ball: "Size 3",
-  Format: "4v4, small fields and goals",
-  "Goalkeeper / penalty area": "Neither in traditional AYSO 4v4",
-  "Offside / heading": "Neither in this reference format",
-  "Free kicks": "Indirect; opponents approximately 5 yards away",
-  "Touchline restart": "Region determines throw, pass, or dribble-in",
-  Positions: "Rotate roles; development comes before the result.",
+  "Players on field": "6 vs. 6 — confirmed by La Quinta Region 443",
+  "Game length": "40 minutes — two 20-minute halves",
+  "Team roster": "Approximately 8 players",
+  "Playing time": "Every player must play at least three quarters",
+  "Bench rotation":
+    "No player may sit twice until every player has sat once",
+  Ball: "Size 3 — national AYSO 8U baseline",
+  Offside: "No — national AYSO 8U baseline",
+  Heading: "No deliberate heading — national AYSO 8U baseline",
+  "Free kicks":
+    "Indirect; opponents approximately 5 yards away — national AYSO 8U baseline",
+  Goalkeeper: "Confirm with La Quinta Region 443",
+  "Touchline restart": "Confirm throw-in, pass-in, or dribble-in with Region 443",
+  "Other restart details": "Confirm with Region 443 before teaching them",
 };
 
 window.LA_QUINTA_8U = {

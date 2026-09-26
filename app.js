@@ -707,7 +707,7 @@
                   `<div><dt>${t}</dt><dd>${k === "periods" && state.rules[k] ? (state.rules[k] === "2" ? "Halves" : "Quarters") : rule(k)}</dd></div>`,
               )
               .join("")}</dl>${go("Update game settings", "league", "space")}</section></div>`
-          : `<div class="notice">REFERENCE ONLY • Your local league rules may differ. Our League controls what coaches follow. These values are never copied into your settings automatically.</div><div class="grid"><section class="card"><h2>Common AYSO 8U reference</h2><dl class="rules-list">${Object.entries(
+          : `<div class="notice green">6V6 REFERENCE • Built for La Quinta AYSO Region 443. Confirm the items marked below with the region before game day.</div><div class="grid"><section class="card"><h2>La Quinta 8U quick reference</h2><dl class="rules-list">${Object.entries(
               REFERENCE,
             )
               .map(
@@ -715,7 +715,7 @@
               )
               .join(
                 "",
-              )}</dl><p class="small space">Based on <a href="https://wiki.ayso.org/wiki/8U_Official" target="_blank" rel="noopener">AYSO 8U guidance</a>. Reviewed September 25, 2026. Not a substitute for your league’s current rules.</p></section><section class="card"><h2>A simple 4v4 shape</h2>${pitch("diamond", "Reference 1–2–1 diamond")}${legend}<p>One gives depth, two give width, one gives height. All four attack and defend. Rotate roles.</p><p class="muted">Applies to four field players without a goalkeeper. Do not force children to hold exact spots.</p></section></div>`
+              )}</dl><p class="small space">Sources: <a href="https://www.ayso443.org/Default.aspx?tabid=855462" target="_blank" rel="noopener">Region 443 program information ↗</a>, <a href="https://www.ayso443.org/Default.aspx?tabid=855459" target="_blank" rel="noopener">participation policy ↗</a>, and <a href="https://wiki.ayso.org/wiki/8U_Official" target="_blank" rel="noopener">national AYSO 8U guidance ↗</a>. Reviewed September 25, 2026.</p></section><section class="card"><h2>Simple 6v6 sideline reminders</h2><div class="eyebrow">WE HAVE THE BALL</div>${list(["Make the field big", "Find open grass and passing lanes", "Go forward when there is space", "Let players choose to dribble, pass, or shoot"])}<div class="eyebrow space">THEY HAVE THE BALL</div>${list(["Nearest player slows the attacker", "Teammates recover between the ball and goal", "Stay connected and help win it back"])}<div class="eyebrow space">ROTATIONS</div>${list(["Track four playing periods so everyone reaches three quarters", "Rotate roles instead of assigning permanent positions", "Do not build a goalkeeper-specific formation until Region 443 confirms goalkeeper use"])}</section></div>`
       }`
     );
   }

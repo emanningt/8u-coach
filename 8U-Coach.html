@@ -2415,13 +2415,20 @@ window.RULE_FIELDS = [
   ["other", "Other local rules", "text"],
 ];
 window.REFERENCE = {
-  Ball: "Size 3",
-  Format: "4v4, small fields and goals",
-  "Goalkeeper / penalty area": "Neither in traditional AYSO 4v4",
-  "Offside / heading": "Neither in this reference format",
-  "Free kicks": "Indirect; opponents approximately 5 yards away",
-  "Touchline restart": "Region determines throw, pass, or dribble-in",
-  Positions: "Rotate roles; development comes before the result.",
+  "Players on field": "6 vs. 6 — confirmed by La Quinta Region 443",
+  "Game length": "40 minutes — two 20-minute halves",
+  "Team roster": "Approximately 8 players",
+  "Playing time": "Every player must play at least three quarters",
+  "Bench rotation":
+    "No player may sit twice until every player has sat once",
+  Ball: "Size 3 — national AYSO 8U baseline",
+  Offside: "No — national AYSO 8U baseline",
+  Heading: "No deliberate heading — national AYSO 8U baseline",
+  "Free kicks":
+    "Indirect; opponents approximately 5 yards away — national AYSO 8U baseline",
+  Goalkeeper: "Confirm with La Quinta Region 443",
+  "Touchline restart": "Confirm throw-in, pass-in, or dribble-in with Region 443",
+  "Other restart details": "Confirm with Region 443 before teaching them",
 };
 
 window.LA_QUINTA_8U = {
@@ -3226,7 +3233,7 @@ window.SOURCES = [
                   `<div><dt>${t}</dt><dd>${k === "periods" && state.rules[k] ? (state.rules[k] === "2" ? "Halves" : "Quarters") : rule(k)}</dd></div>`,
               )
               .join("")}</dl>${go("Update game settings", "league", "space")}</section></div>`
-          : `<div class="notice">REFERENCE ONLY • Your local league rules may differ. Our League controls what coaches follow. These values are never copied into your settings automatically.</div><div class="grid"><section class="card"><h2>Common AYSO 8U reference</h2><dl class="rules-list">${Object.entries(
+          : `<div class="notice green">6V6 REFERENCE • Built for La Quinta AYSO Region 443. Confirm the items marked below with the region before game day.</div><div class="grid"><section class="card"><h2>La Quinta 8U quick reference</h2><dl class="rules-list">${Object.entries(
               REFERENCE,
             )
               .map(
@@ -3234,7 +3241,7 @@ window.SOURCES = [
               )
               .join(
                 "",
-              )}</dl><p class="small space">Based on <a href="https://wiki.ayso.org/wiki/8U_Official" target="_blank" rel="noopener">AYSO 8U guidance</a>. Reviewed September 25, 2026. Not a substitute for your league’s current rules.</p></section><section class="card"><h2>A simple 4v4 shape</h2>${pitch("diamond", "Reference 1–2–1 diamond")}${legend}<p>One gives depth, two give width, one gives height. All four attack and defend. Rotate roles.</p><p class="muted">Applies to four field players without a goalkeeper. Do not force children to hold exact spots.</p></section></div>`
+              )}</dl><p class="small space">Sources: <a href="https://www.ayso443.org/Default.aspx?tabid=855462" target="_blank" rel="noopener">Region 443 program information ↗</a>, <a href="https://www.ayso443.org/Default.aspx?tabid=855459" target="_blank" rel="noopener">participation policy ↗</a>, and <a href="https://wiki.ayso.org/wiki/8U_Official" target="_blank" rel="noopener">national AYSO 8U guidance ↗</a>. Reviewed September 25, 2026.</p></section><section class="card"><h2>Simple 6v6 sideline reminders</h2><div class="eyebrow">WE HAVE THE BALL</div>${list(["Make the field big", "Find open grass and passing lanes", "Go forward when there is space", "Let players choose to dribble, pass, or shoot"])}<div class="eyebrow space">THEY HAVE THE BALL</div>${list(["Nearest player slows the attacker", "Teammates recover between the ball and goal", "Stay connected and help win it back"])}<div class="eyebrow space">ROTATIONS</div>${list(["Track four playing periods so everyone reaches three quarters", "Rotate roles instead of assigning permanent positions", "Do not build a goalkeeper-specific formation until Region 443 confirms goalkeeper use"])}</section></div>`
       }`
     );
   }
